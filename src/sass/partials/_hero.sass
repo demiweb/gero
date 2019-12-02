@@ -1,0 +1,65 @@
+.hero
+  $this: &
+  position: relative
+  &__bg
+    position: absolute
+    z-index: 0
+    top: 0
+    bottom: 0
+    width: 50%
+    +cover
+  &__bg-left
+    left: 0
+  &__bg-right
+    right: 0
+  &__inner
+    position: relative
+    z-index: 1
+  &__content
+    max-width: 295px
+  &__right
+    padding-left: 50px
+  &__label
+    position: absolute
+    z-index: 2
+    top: 25px
+    left: 50%
+    transform: translate(-50%, 0)
+    width: 160px
+
+  &--home
+    #{$this}__inner
+      padding-top: 10%
+      padding-bottom: 10%
+
+.hero-label
+  color: $accent
+  text-align: center
+  &__icon
+    width: 55px
+    height: 55px
+    border-radius: 50%
+    background-color: $white
+    +flex(center, center)
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 10px
+    overflow: hidden
+    position: relative
+    .icon
+      font-size: em(25)
+      position: relative
+      z-index: 1
+    +before
+      background-color: #e8e8e8
+      position: absolute
+      right: 0
+      top: 0
+      bottom: 0
+      width: 50%
+      z-index: 0
+
+
+  &__title
+    font-weight: 700
+    font-size: $fz-sm

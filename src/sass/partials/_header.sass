@@ -1,0 +1,61 @@
+.header
+  $this: &
+  .container
+    height: 100%
+  &__top
+    height: $header-top-height
+    background-color: $white
+  &__bottom
+    height: $header-bottom-height
+    background-color: $gray
+  &__inner
+    height: 100%
+    +flex(flex-start, center)
+    padding-top: 10px
+    padding-bottom: 10px
+  &__logo
+    font-size: 0
+  &__contacts
+    +flex(space-around, center)
+    flex-grow: 1
+    padding-left: 15px
+    padding-right: 15px
+  &__lang
+    text-align: right
+  &__nav
+    width: 100%
+
+.header-contact
+  +flex(flex-start, center)
+  font-weight: 300
+  color: $c-title
+  &__icon
+    margin-right: 8px
+    color: $accent
+    font-size: 0
+    .icon
+      font-size: $fz
+      +sm
+        font-size: $fz-sm-px
+  &__text
+    a
+      +tr(color .3s)
+      +hover
+        color: $accent
+  &__small
+    text-decoration: underline
+    color: $c-text
+    font-size: $fz-sm
+
+
+.lang
+  li
+    display: inline-block
+  a
+    +tr(color .3s)
+    +hover
+      color: $c-title
+    &.is-active
+      color: $c-title
+
+

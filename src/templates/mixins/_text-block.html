@@ -1,0 +1,27 @@
+{% from 'mixins/_btn.html' import btn %}
+{% set btn = btn %}
+
+{% macro textBlock(title, text, button)%}
+<!-- begin text-block -->
+<div class="text-block">
+  {% if title %}
+    <div class="text-block__title">
+      <h2 class="title{% if title.mod %} {{ title.mod }}{% endif %}">{{ title.title | safe }}</h2>
+    </div>
+  {% endif %}
+
+  {% if text %}
+  <div class="text-block__text{% if text.mod %} {{ text.mod }}{% endif %}">{{ text.text | safe }}</div>
+  {% endif %}
+
+  {% if button %}
+  {{ btn(
+    title = button.title,
+    mod = button.mod,
+    href = button.href,
+    attributes = button.attributes
+  ) }}
+  {% endif %}
+</div>
+<!-- end text-block -->
+{% endmacro %}

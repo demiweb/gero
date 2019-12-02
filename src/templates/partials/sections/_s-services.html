@@ -1,0 +1,65 @@
+{%set
+tabs = [
+  { name: 'students', mod: 'is-active' },
+  { name: 'print' },
+  { name: 'copy' },
+  { name: 'services' }
+]
+%}
+
+{%set
+services = [
+  { img: '30.jpg', title: '' },
+  { img: '27.jpg', title: '' },
+  { img: '28.jpg', title: '' },
+  { img: '29.jpg', title: '' },
+  { img: '31.jpg', title: '' },
+  { img: '32.jpg', title: '' },
+  { img: '34.jpg', title: '' }
+]
+%}
+
+<!-- begin section -->
+<section class="section">
+  <div class="container">
+    <div class="section__title">
+      <h2 class="title">Выберите услугу</h2>
+    </div>
+    </div>
+
+    <!-- begin services-tabs -->
+    <div class="services-tabs js-tabs">
+      <div class="container">
+        <div class="services-tabs__tabs">
+          {{ mixins.list(
+            name = 'services-tabs-list',
+            modifications = { wrap: '', list: 'services-tabs-list__list', item: 'services-tabs-list__item', link: '' },
+            list = [
+              { item: '<button class="services-tabs-list__btn js-tab is-active">Для студентов и диссертантов</button>', itemMod: '', itemAttributes: { 'data-target-tab': 'students' } },
+              { item: '<button class="services-tabs-list__btn js-tab">широкоформатная печать</button>', itemMod: '', itemAttributes: { 'data-target-tab': 'print' } },
+              { item: '<button class="services-tabs-list__btn js-tab">широкоформатное копирование</button>', itemMod: '', itemAttributes: { 'data-target-tab': 'copy' } },
+              { item: '<button class="services-tabs-list__btn js-tab">дополнительные услуги</button>', itemMod: '', itemAttributes: { 'data-target-tab': 'services' } }
+            ]
+          ) }}
+        </div>
+
+        <div class="services-tabs__content">
+          {% for i in tabs %}
+          <div class="services-tabs__item js-tabs-item{% if i.mod %} {{ i.mod }}{% endif %}" data-tab="{{ i.name }}">
+            <div class="row">           
+            
+            {% for j in services %}
+            <div class="col-3">
+              {% include "partials/_service-card.html" %}
+            </div>
+            {% endfor %}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <!-- end services-tabs -->
+  
+</section>
+<!-- end section -->

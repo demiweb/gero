@@ -1,0 +1,68 @@
+.footer
+  $this: &
+  background-color: $gray-lightest
+  &__top
+    border-bottom: 1px solid  #dcdcdc
+  &__inner
+    +flex(flex-start, normal, row, wrap)
+    padding-top: 40px
+    padding-bottom: 40px
+    margin-left: -15px
+    margin-right: -15px
+    +lg
+      padding-top: 30px
+      padding-bottom: 30px
+    +md
+      padding-top: 20px
+      padding-bottom: 20px
+  &__nav
+    +flex(flex-start, normal, row, wrap)
+    width: percentage(9/12)
+  &__contacts
+    width: percentage(3/12)
+    +flex(flex-start, center, column)
+    #{$this}__block
+      width: auto
+  &__block
+    width: 25%
+    padding-left: 15px
+    padding-right: 15px
+    +notlast
+      margin-bottom: 25px
+  &__title
+    margin-bottom: 20px
+    +md
+      margin-bottom: 10px
+  &__bottom-in
+    +flex(flex-start, center)
+    padding-top: 8px
+    padding-bottom: 8px
+  &__auth, &__text
+    width: 330px
+  &__copy
+    width: calc(100% - 660px)
+    padding-left: 15px
+    padding-right: 15px
+    text-align: center
+    font-weight: 300
+    font-size: 12px
+  &__text
+    font-size: $fz-sm
+    color: $c-title
+  &__auth
+    font-size: 13px
+    +flex(flex-start, center)
+  &__auth-icon
+    color: $white
+    background-color: $black
+    +flex(center, center)
+    width: 40px
+    height: 40px
+    margin-right: 15px
+    .icon
+      font-size: 21px
+  &__text
+    text-align: right
+    a
+      text-decoration: underline
+      color: $blue

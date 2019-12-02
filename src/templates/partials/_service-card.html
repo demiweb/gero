@@ -1,0 +1,29 @@
+<a
+  href="#"
+  class="card"
+  >
+    <span class="card__img js-lazy" data-background-image="./img/cards/{{ i.img or '30.jpg' }}"></span>
+
+    <span class="card__content">
+      <span class="card__title">
+        <span class="title title--h3">{{ i.title | safe }}</span>
+      </span>
+
+      <span class="card__text text--sm">
+        {% if i.text %}
+          {{ i.text | safe}}
+        {% else %}
+        Печать презентаций в цвете + сшивка на пружину
+        {% endif %}
+      </span>
+
+      <span class="card__btn">
+        {{ mixins.btn(
+          title = 'Заказать Online',
+          mod = '',
+          href = false,
+          isInline = true
+        ) }}
+      </span>
+    </span>
+  </a>

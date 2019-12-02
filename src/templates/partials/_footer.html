@@ -1,5 +1,139 @@
+{%set
+nav = [
+  {
+    title: 'Для студентов 
+и диссертантов',
+    nav: [
+      { link: 'Твердый переплет Дипломные работы' },
+      { link: 'Твердый переплет Диссертации' },
+      { link: 'Твердый переплет ' },
+      { link: 'Твердый переплет ' },
+      { link: 'Твердый переплет ' },
+      { link: 'Твердый переплет' },
+      { link: 'Твердый переплет ' }
+    ]
+  },
+  {
+    title: 'Широкоформатная 
+печать',
+    nav: [
+      { link: 'Чертежи' },
+      { link: 'Проекты' },
+      { link: 'Планшеты' },
+      { link: 'Чертежи' },
+      { link: 'Проекты' },
+      { link: 'Планшеты' }
+    ]
+  },
+  {
+    title: 'Широкоформатное 
+копирование',
+    nav: [
+      { link: 'Чертежи' },
+      { link: 'Проекты' },
+      { link: 'Планшеты' },
+      { link: 'Чертежи' },
+      { link: 'Проекты' },
+      { link: 'Планшеты' }
+    ]
+  },
+  {
+    title: 'Дополнительные
+услуги',
+    nav: [
+      { link: 'Прошивка на металлическую пружину' },
+      { link: 'Проекты' },
+      { link: 'Прошивка на металлическую пружину' },
+      { link: 'Чертежи' },
+      { link: 'Прошивка на металлическую пружину' },
+      { link: 'Планшеты' }
+    ]
+  }
+]
+%}
+
 <!-- begin footer -->
 <footer class="footer">
-  hello from footer
+  <div class="footer__top">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__nav">
+          {% for i in nav %}
+          <div class="footer__block">
+            <div class="footer__title">
+              <h5 class="title title--h5">{{ i.title | safe }}</h5>
+            </div>
+
+            <div class="footer__nav-block">
+              {{ mixins.list(
+                name = 'nav',
+                modifications = { wrap: 'nav--footer', item: '', link: '' },
+                list = i.nav
+              ) }}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+
+        <div class="footer__contacts">
+          <div class="footer__contacts-in">
+            <div class="footer__block">
+              <div class="footer__title">
+                <h5 class="title title--h5">Контакты</h5>
+              </div>
+
+              <div class="footer__nav-block">
+                {{ mixins.list(
+                  name = '',
+                  modifications = { wrap: 'nav nav--footer', item: '', link: '' },
+                  list = [
+                    { link: '+38 (096) 484-45-65', href: 'tel:+380964844565' },
+                    { item: 'Киев, бул. Марии Приймаченко, 1/27' },
+                    { link: 'testemail.ua@gmail.com', href: 'mailto:testemail.ua@gmail.com' }
+                  ]
+                ) }}
+              </div>
+            </div>
+
+            <div class="footer__block">
+              <div class="footer__title">
+                <h5 class="title title--h5">Клиенту</h5>
+              </div>
+
+              <div class="footer__nav-block">
+                {{ mixins.list(
+                  name = '',
+                  modifications = { wrap: 'nav nav--footer', item: '', link: '' },
+                  list = [
+                    { link: 'Оплата и доставка' },
+                    { link: 'Контакты' },
+                    { link: 'Блог' }
+                  ]
+                ) }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer__bottom-in">
+        <div class="footer__auth">
+          <div class="footer__auth-icon">
+            {{ mixins.icon('D') }}
+          </div>
+          <div class="footer__auth-text">
+            Developed by <a href="#">Demiweb International</a>
+          </div>
+        </div>
+
+        <div class="footer__copy">Компания «геро» занимается производством печатной продукции в Киеве с 1995 года.</div>
+
+        <div class="footer__text">Минимальный заказ от 100 грн</div>
+      </div>
+    </div>
+  </div>  
 </footer>
 <!-- end footer -->

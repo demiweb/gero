@@ -1,0 +1,53 @@
+<!-- begin hero -->
+<section class="hero hero--home">
+  <div class="hero__bg hero__bg-left js-lazy" data-background-image="./img/hero/bg-hero-home-left.jpg"></div>
+  <div class="hero__bg hero__bg-right js-lazy" data-background-image="./img/hero/bg-hero-home-right.jpg"></div>
+  <div class="hero__label">
+    <!-- begin hero-label -->
+    <div class="hero-label">
+      <div class="hero-label__icon">
+        {{ mixins.icon('passage-of-time') }}
+      </div>
+
+      <div class="hero-label__title">Оперативная печать за 10 минут</div>
+    </div>
+    <!-- end hero-label -->
+  </div>
+
+  <div class="hero__inner">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="hero__left">
+            <div class="hero__content">
+              {{ mixins.textBlock(
+                title = { title: 'Для студентов и диссертантов' },
+                text = { text: 'Напечатаем полиграфическую продукцию качественно и в кратчайшие сроки', mod: 'text--sm' },
+                button = {
+                  title: 'Заказать печать',
+                  href: '#'
+                }
+              ) }}
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="hero__right">
+            <div class="hero__content">
+              {{ mixins.textBlock(
+                title = { title: 'Широкоформатная печать' },
+                text = { text: 'Напечатаем полиграфическую продукцию качественно и в кратчайшие сроки', mod: 'text--sm' },
+                button = {
+                  title: 'Заказать печать',
+                  href: '#'
+                }
+              ) }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end hero -->

@@ -5,4 +5,16 @@ h1, h2, h3, h4, h5, h6
   font-weight: 400
 
 .title
-  +css-lock(21, 45, 320, 1399, font-size)
+  color: $c-title
+  line-height: 1
+  +arci
+  font-weight: 400
+  +css-lock(21, 36, 320, 1399, font-size)
+  &--h5
+    +reg
+    font-weight: 700
+    font-size: 1em !important
+
+.text
+  &--sm
+    font-size: $fz-sm

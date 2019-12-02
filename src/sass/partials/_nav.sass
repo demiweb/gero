@@ -1,0 +1,31 @@
+.nav
+  color: $white
+  font-weight: 300
+  ul
+    +flex(space-between, center)
+  li
+  a
+    +tr(color .3s)
+    +hover
+      color: #a9a9a9
+      text-decoration: underline
+    &.is-active
+      color: #a9a9a9
+      text-decoration: underline
+
+  &--footer
+    color: $c-title
+    font-size: $fz-sm
+
+    ul
+      display: block
+    li
+      +notlast
+        margin-bottom: 10px
+    a
+      +hover
+        text-decoration: none
+        color: $c-text
+      &.is-active
+        text-decoration: none
+        color: $c-text

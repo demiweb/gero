@@ -3,7 +3,7 @@ body
   line-height: 1.4
   font-size: $fz
   min-width: 320px
-  font-family: 'proximanova', Arial, sans-serif
+  +reg
   color: $c-text
   +no-scroll
   +sm
@@ -17,4 +17,16 @@ body
 .lazy
   &.is-loaded:not(.no-fade-in)
     animation: fadeIn 1s
+
+.container
+  width: 100%
+  padding-left: 15px
+  padding-right: 15px
+  margin-left: auto
+  margin-right: auto
+  max-width: 1440px
+
+.logo
+  font-size: 0
+  display: inline-block
     
