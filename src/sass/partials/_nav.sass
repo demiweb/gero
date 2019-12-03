@@ -3,7 +3,12 @@
   font-weight: 300
   ul
     +flex(space-between, center)
+    +lg
+      display: block
   li
+    +lg
+      padding-top: 8px
+      padding-bottom: 8px
   a
     +tr(color .3s)
     +hover
@@ -20,6 +25,9 @@
     ul
       display: block
     li
+      +lg
+        padding-top: 0
+        padding-bottom: 0
       +notlast
         margin-bottom: 10px
     a

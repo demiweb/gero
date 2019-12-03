@@ -13,6 +13,7 @@ contacts = [
     text: '<p>Пн - Пт</p><p>9:00 - 18:00</p>'
   },
   {
+    mod: 'header__phone',
     icon: 'call-answer',
     text: '
       <a href="tel:+380964864565">+38 (096) 486-45-65</a>
@@ -36,7 +37,7 @@ contacts = [
         <div class="header__contacts">
           {% for i in contacts %}
           <!-- begin header-contact -->
-            <div class="header__contact header-contact">
+            <div class="header__contact header-contact{% if i.mod %} {{ i.mod }}{% endif %}">
             <div class="header-contact__icon">
               {{ mixins.icon(i.icon) }}
             </div>
@@ -58,6 +59,10 @@ contacts = [
             ]
           ) }}
         </div>
+
+        <div class="header__burger">
+          <button class="burger js-burger"><span></span></button>
+        </div>
       </div>
     </div>
   </div>
@@ -65,7 +70,9 @@ contacts = [
   <div class="header__bottom">
     <div class="container">
       <div class="header__inner">
-        <div class="header__nav">
+        <div class="header__nav js-menu">
+          <button class="header__close close js-menu-close"></button>
+
           <div class="header__nav-in">
             {% include "partials/_nav.html" %}
           </div>

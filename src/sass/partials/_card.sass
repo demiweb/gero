@@ -1,0 +1,45 @@
+.card
+  $this: &
+  +flex(flex-start, normal, column)
+  overflow: hidden
+  border-radius: $radius
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1)
+  text-align: center
+  border: 1px solid transparent
+  height: calc(100% - 30px)
+  margin-bottom: 30px
+  +tr(border-color .5s, height .5s)
+  +sm
+    margin-bottom: 15px
+    height: calc(100% - 15px)
+  +hover
+    border-color: $accent
+    #{$this}__btn
+      max-height: 100px
+  &__content
+    flex-grow: 1
+    background-color: $white
+    padding: 25px
+    +flex(center, normal, column)
+    +lg
+      padding: 20px
+    +md
+      padding: 15px
+  &__text
+    display: block
+  &__img
+    display: block
+    +cover
+    padding-top: 60%
+  &__title
+    margin-bottom: 10px
+    display: block
+  &__text
+    margin-bottom: 15px
+    display: block
+    +md
+      margin-bottom: 10px
+  &__btn
+    max-height: 0
+    overflow: hidden
+    +tr(max-height .5s)

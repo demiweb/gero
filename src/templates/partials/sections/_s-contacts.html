@@ -1,0 +1,77 @@
+{%set
+contacts = [
+  {
+    icon: 'call-answer',
+    title: 'Телефон',
+    text: '<a href="tel:+380964864565">+38 (096) 486-45-65</a>'
+  },
+  {
+    icon: 'placeholder',
+    title: 'Адрес',
+    text: '<p>бул. Марии Приймаченко, 1/27</p><p>Киев, 02000</p>'
+  },
+  {
+    icon: 'envelope',
+    title: 'Электронная почта',
+    text: '<a href="mailto:testemail.ua@gmail.com">testemail.ua@gmail.com</a>'
+  },
+  {
+    icon: 'clock',
+    title: 'Режим работы',
+    text: 'Пн - Пт (9:00 - 18:00)'
+  }
+]
+%}
+
+<!-- begin section -->
+<section class="section s-contacts">
+  <div class="section__bg">
+    <iframe 
+      class="js-lazy" 
+      src="" 
+      data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.1913822023826!2d30.538895315895225!3d50.41890579751812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf6b4f1cc763%3A0xe47b95c124ec5102!2z0LHRg9C7LiDQnNCw0YDQuNC4INCf0YDQuNC50LzQsNGH0LXQvdC60L4sIDEvMjcsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1575380484659!5m2!1sru!2sua"
+      frameborder="0"
+      style="border:0;"
+      allowfullscreen=""></iframe>
+  </div>
+
+  <div class="section__inner pointer-events-none">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-5 col-sm-6">
+          <!-- begin contacts-block -->
+          <div class="contacts-block">
+            <div class="contacts-block__title">
+              <h3 class="title title--h3">Контакты</h3>
+            </div>
+
+            <div class="contacts-block__text text--light">Свяжитесь с нами любым удобным для вас
+способом или заезжайте к нам в гости</div>
+
+            <div class="contacts-block__contacts">
+              {% for i in contacts %}
+              <!-- begin contact -->
+              <div class="contact">
+                <div class="contact__icon">
+                  {{ mixins.icon(i.icon) }}
+                </div>
+
+                <div class="contact__content">
+                  <div class="contact__title">
+                    <h4 class="title title--h4">{{ i.title | safe }}</h4>
+                  </div>
+
+                  <div class="contact__text text--light text--sm">{{ i.text | safe }}</div>
+                </div>
+              </div>
+              <!-- end contact -->
+              {% endfor %}
+            </div>
+          </div>
+          <!-- end contacts-block -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end section -->

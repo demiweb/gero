@@ -1,0 +1,54 @@
+.contacts-block
+  background-color: $white
+  border-radius: $radius
+  box-shadow: 0.551px 1.923px 25px 0px rgba(0, 0, 0, 0.14)
+  padding: 50px 40px
+  +xl
+    padding: 40px
+  +lg
+    padding: 30px
+  +md
+    padding: 20px
+  +sm
+    padding: 15px
+  +xs
+  &__title
+    margin-bottom: 10px
+  &__text
+    margin-bottom: 25px
+    padding-bottom: 15px
+    position: relative
+    +before
+      position: absolute
+      bottom: 0
+      left: 0
+      z-index: 1
+      background-color: $accent
+      height: 2px
+      width: 100px
+    +md
+      margin-bottom: 15px
+
+.contact
+  position: relative
+  padding-left: 25px
+  +notlast
+    margin-bottom: 25px
+    +md
+      margin-bottom: 15px
+  &__title
+    margin-bottom: 10px
+  &__icon
+    position: absolute
+    z-index: 1
+    color: $accent
+    top: 0
+    left: 0
+    .icon
+  &__text
+    a
+      +tr(color .3s)
+      +hover
+        color: $accent
+
+

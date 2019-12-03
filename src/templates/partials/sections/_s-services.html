@@ -9,13 +9,19 @@ tabs = [
 
 {%set
 services = [
-  { img: '30.jpg', title: '' },
-  { img: '27.jpg', title: '' },
-  { img: '28.jpg', title: '' },
-  { img: '29.jpg', title: '' },
-  { img: '31.jpg', title: '' },
-  { img: '32.jpg', title: '' },
-  { img: '34.jpg', title: '' }
+  { img: '30.jpg', title: 'Твердый переплет 
+дипломные работы' },
+  { img: '27.jpg', title: 'Твердый переплет 
+диссертации' },
+  { img: '28.jpg', title: 'Авторефераты
+диссертаций' },
+  { img: '29.jpg', title: 'Раздаточный
+материал' },
+  { img: '31.jpg', title: 'Цветная и ч/б
+распечатка А4' },
+  { img: '32.jpg', title: 'Цветная и ч/б
+распечатка А3' },
+  { img: '34.jpg', title: 'Презентации' }
 ]
 %}
 
@@ -35,21 +41,21 @@ services = [
             name = 'services-tabs-list',
             modifications = { wrap: '', list: 'services-tabs-list__list', item: 'services-tabs-list__item', link: '' },
             list = [
-              { item: '<button class="services-tabs-list__btn js-tab is-active">Для студентов и диссертантов</button>', itemMod: '', itemAttributes: { 'data-target-tab': 'students' } },
-              { item: '<button class="services-tabs-list__btn js-tab">широкоформатная печать</button>', itemMod: '', itemAttributes: { 'data-target-tab': 'print' } },
-              { item: '<button class="services-tabs-list__btn js-tab">широкоформатное копирование</button>', itemMod: '', itemAttributes: { 'data-target-tab': 'copy' } },
-              { item: '<button class="services-tabs-list__btn js-tab">дополнительные услуги</button>', itemMod: '', itemAttributes: { 'data-target-tab': 'services' } }
+              { item: '<button class="services-tabs-list__btn js-tab is-active" data-target-tab="students">Для студентов и диссертантов</button>' },
+              { item: '<button class="services-tabs-list__btn js-tab" data-target-tab="print">широкоформатная печать</button>' },
+              { item: '<button class="services-tabs-list__btn js-tab" data-target-tab="copy">широкоформатное копирование</button>' },
+              { item: '<button class="services-tabs-list__btn js-tab" data-target-tab="services">дополнительные услуги</button>' }
             ]
           ) }}
         </div>
 
         <div class="services-tabs__content">
-          {% for i in tabs %}
-          <div class="services-tabs__item js-tabs-item{% if i.mod %} {{ i.mod }}{% endif %}" data-tab="{{ i.name }}">
+          {% for j in tabs %}
+          <div class="services-tabs__item js-tabs-item{% if j.mod %} {{ j.mod }}{% endif %}" data-tab="{{ j.name }}">
             <div class="row">           
             
-            {% for j in services %}
-            <div class="col-3">
+            {% for i in services %}
+            <div class="col-lg-3 col-md-4 col-sm-6">
               {% include "partials/_service-card.html" %}
             </div>
             {% endfor %}

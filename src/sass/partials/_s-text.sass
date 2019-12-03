@@ -1,0 +1,38 @@
+.s-text
+  max-height: 520px
+  overflow: auto
+  color: $c-title
+  font-size: $fz-sm
+  h1, h2, h3, h4, h5, h6
+    margin-bottom: 15px
+    +md
+      margin-bottom: 10px
+  p, ul, ol
+    +notlast
+      margin-bottom: 20px
+      +md
+        margin-bottom: 15px
+  ul
+    li
+      +list-bullet
+      padding-left: 1em
+      position: relative
+      &::before
+        margin-right: .5em
+        color: $accent
+        font-size: 2em
+        position: absolute
+        top: 50%
+        transform: translate(0, -50%)
+        left: 0
+  ol
+    +counter('text', ')')
+    li
+      &::before
+        margin-right: .5em
+  h1
+    @extend .title
+    @extend .title--h2
+  h4
+    @extend .title
+    @extend .title--h2

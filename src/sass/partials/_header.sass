@@ -1,13 +1,24 @@
 .header
   $this: &
+  position: relative
+  z-index: 10
   .container
     height: 100%
+  +lg
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
   &__top
     height: $header-top-height
     background-color: $white
+    +lg
+      height: $header-top-height-lg
   &__bottom
     height: $header-bottom-height
     background-color: $gray
+    +lg
+      height: 0
   &__inner
     height: 100%
     +flex(flex-start, center)
@@ -20,10 +31,55 @@
     flex-grow: 1
     padding-left: 15px
     padding-right: 15px
+    +lg
+      justify-content: flex-end
+  &__contact
+    &:not(.header__phone)
+      +lg
+        display: none
   &__lang
     text-align: right
+  &__phone
+    +xss
+      a
+        font-size: em(12)
+        // display: none
   &__nav
     width: 100%
+    +lg
+      position: fixed
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      z-index: 10
+      padding: 15px
+      overflow: auto
+      height: auto
+      background-color: $gray
+      +vertical
+      +ready
+        +tr(opacity .3s, visibility .3s)
+      +hidden
+      &.is-active
+        +visible
+  &__nav-in
+    +lg
+      display: inline-block
+      vertical-align: middle
+      font-size: $fz
+      +sm
+        font-size: $fz-sm-px
+
+  &__burger
+    display: none
+    margin-left: 15px
+    +lg
+      display: block
+    +xs
+      margin-left: 5px
+  &__close
+    color: $white
 
 .header-contact
   +flex(flex-start, center)
@@ -33,6 +89,8 @@
     margin-right: 8px
     color: $accent
     font-size: 0
+    +xss
+      margin-right: 4px
     .icon
       font-size: $fz
       +sm
@@ -58,4 +116,24 @@
     &.is-active
       color: $c-title
 
-
+.burger 
+  display: block
+  width: 28px
+  height: 28px
+  position: relative
+  span:after, span:before 
+    content: ""
+    position: absolute
+    left: 0
+  span:after
+    top: 5px
+  span:before
+    bottom: 5px
+  span 
+    display: block
+  span, span:after, span:before
+    width: 100%
+    height: 2px
+    background-color: currentColor
+    backface-visibility: hidden
+    border-radius: 2px

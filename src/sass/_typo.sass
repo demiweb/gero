@@ -10,11 +10,27 @@ h1, h2, h3, h4, h5, h6
   +arci
   font-weight: 400
   +css-lock(21, 36, 320, 1399, font-size)
+  &--h2
+    +css-lock(18, 24, 320, 1399, font-size)
+    font-weight: 600
+    +reg
+  &--h3
+    +css-lock(16, 21, 320, 1399, font-size)
+    font-weight: 600
+    +reg
+  &--h4
+    +css-lock(14, 18, 320, 1399, font-size)
+    font-weight: 600
+    +reg
   &--h5
     +reg
     font-weight: 700
     font-size: 1em !important
+  &--reg
+    +reg
 
 .text
   &--sm
     font-size: $fz-sm
+  &--light
+    font-weight: 300

@@ -5,11 +5,13 @@
   min-width: 250px
   font-weight: 700
   padding: 0.85em 1em
-  border-radius: 1.8em
+  border-radius: $radius
   background-color: $accent
   border: 1px solid $accent
   +tr(background-color .3s, border-color .3s, color .3s, opacity .3s)
   +hover
-    opacity: .7
-    // background-color: transparent
-    // color: $accent
+    &:not(.btn--no-hover)
+      opacity: .7
+  +xs
+    min-width: 0
+    width: 100%

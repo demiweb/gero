@@ -1,6 +1,7 @@
 .hero
   $this: &
   position: relative
+  background-color: $gray-lightest
   &__bg
     position: absolute
     z-index: 0
@@ -8,17 +9,34 @@
     bottom: 0
     width: 50%
     +cover
+    +lg
+      // background-position: 0 50%
+      +before
+        +coverdiv
+        z-index: 0
+        background-color: rgba($white, .7)
+    +md
+      background-position: 60% 50%
+    +sm
+      background-position: 70% 50%
+      // display: none
   &__bg-left
     left: 0
   &__bg-right
     right: 0
+    +xll
+      background-position: 0 50%
   &__inner
     position: relative
     z-index: 1
   &__content
     max-width: 295px
+    +sm
+      max-width: none
   &__right
     padding-left: 50px
+    +lg
+      padding-left: 0
   &__label
     position: absolute
     z-index: 2
@@ -26,11 +44,25 @@
     left: 50%
     transform: translate(-50%, 0)
     width: 160px
+    +lg
+      top: 15px
 
   &--home
     #{$this}__inner
-      padding-top: 10%
-      padding-bottom: 10%
+      +lg
+        padding-top: 50px
+      +sm
+        padding-top: 150px
+        padding-bottom: 30px
+    #{$this}__left, #{$this}__right
+      padding-top: 25%
+      padding-bottom: 25%
+      +sm
+        padding-top: 0
+        padding-bottom: 0
+    #{$this}__left
+      +sm
+        margin-bottom: 30px
 
 .hero-label
   color: $accent

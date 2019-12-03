@@ -9,6 +9,10 @@ body
   +sm
     font-size: $fz-sm-px
 
+.out
+  +lg
+    padding-top: $header-height-lg
+
 .icon
   display: inline-block
   fill: currentColor
@@ -29,4 +33,18 @@ body
 .logo
   font-size: 0
   display: inline-block
+  +xs
+    width: 80px
+  +xss
+    width: 60px
+
+.close
+  +icon-close(20, 1, currentColor)
+  position: absolute
+  z-index: 1
+  top: 20px
+  right: 20px
+  +tr(color .3s)
+  +hover
+    color: $accent
     

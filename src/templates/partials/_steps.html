@@ -1,0 +1,57 @@
+{%set
+steps = [
+  {
+    icon: 'notes',
+    title: 'Оформление
+заявки',
+    text: 'Заполните форму заявки 
+интересующей Вас услуги'
+  },
+  {
+    icon: 'calculator',
+    title: 'Просчет 
+стоимости',
+    text: 'Просчет стоимости и согласование 
+параметров заказа'
+  },
+  {
+    icon: 'save-money',
+    title: 'Оплата',
+    text: 'Внимательно проверьте 
+параметры заказа и оплатите 
+по реквизитам в письме
+'
+  },
+  {
+    icon: 'box',
+    title: 'Самовывоз/ <br>
+Доставка Новой Почтой',
+    text: 'Получите Ваш заказ в офисе 
+или закажите доставку Новой Почтой'
+  }
+]
+%}
+
+<!-- begin steps -->
+<div class="steps">
+  {% for i in steps %}
+  <div class="steps__item">
+    <!-- begin step -->
+    <div class="step">
+      <div class="step__nmb">{{ loop.index }} этап</div>
+
+      <div class="step__icon">
+        {{ mixins.icon(i.icon) }}
+      </div>
+
+      <div class="step__title">
+        <h3 class="title title--h3">{{ i.title | safe }}</h3>
+      </div>
+
+      <div class="step__text text--sm">{{ i.text | safe }}</div>
+    </div>
+    <!-- end step -->
+  </div>
+  {% endfor %}
+</div>
+<!-- end steps -->

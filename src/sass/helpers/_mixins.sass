@@ -227,3 +227,11 @@
   &::before
     content: '\2022'
     display: inline-block
+
+=counter($var, $sep)
+  counter-reset: list + $var
+  > li
+    &:before
+      content: counter(list + $var) $sep
+      counter-increment: list + $var
+      

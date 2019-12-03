@@ -9,21 +9,30 @@
       left: 50%
       transform: translate(-50%, 0)
       z-index: 0
-      width: 100vw
+      width: 300vw
       position: absolute
     +xl
-      padding-top: 50px
-      padding-bottom: 50px
+      margin-bottom: 50px
     +lg
-      padding-top: 40px
-      padding-bottom: 40px
+      margin-bottom: 40px
     +md
-      padding-top: 30px
-      padding-bottom: 30px
+      margin-bottom: 30px
+  &__item
+    max-height: 0
+    overflow: hidden
+    opacity: 0
+    +tr(opacity .3s)
+    &.is-active
+      max-height: none
+      opacity: 1
 
 .services-tabs-list
+  +lg
+    overflow: auto
   &__list
     +flex()
+    +lg
+      width: 1024px
   &__btn
     text-align: center
     display: block
@@ -31,12 +40,19 @@
     font-size: $fz-sm
     border: 1px solid transparent
     border-bottom: 0
-    border-top-left-radius: 20px
-    border-top-right-radius: 20px
+    border-top-left-radius: $radius
+    border-top-right-radius: $radius
     background-color: $gray-lightest
     padding: 1.35em
     min-width: 360px
     +tr(background-color .3s, color .3s, border-color .3s)
+    +xll
+      min-width: 0
+      padding-left: 2.5em
+      padding-right: 2.5em
+    +lg
+      padding-left: 1em
+      padding-right: 1em
     &.is-active
       font-weight: 700
       background-color: $white
