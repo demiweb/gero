@@ -1,0 +1,131 @@
+{%set
+contacts = [
+  {
+    icon: 'placeholder',
+    title: 'Адрес выдачи заказов:',
+    text: '
+    <ul>
+      <li>Киев, м. Дружбы народов,</li>
+      <li>бульвар Леси Украинки, 28</li>
+    </ul>    
+    '
+  },
+  {
+    icon: 'clock',
+    title: 'График работы:',
+    text: '
+      <ul>
+        <li>Пн-вт, чт-пт: 08:30–19:00</li>
+        <li>Ср: 09:00–19:00</li>
+        <li>Сб: 11:00–15:00</li>
+        <li>Вс: Закрыто</li>
+      </ul>
+    '
+  },
+  {
+    icon: 'call-answer',
+    title: 'Телефон:',
+    text: '<a href="tel:+380964864565">+38 (096) 486-45-65</a>'
+  }
+]
+%}
+
+<!-- begin section -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="section__contacts">
+          <!-- begin contacts -->
+          <div class="contacts">
+            {% for i in contacts %}
+            <div class="contacts__item">
+              <!-- begin contact-full -->
+              <div class="contact-full">
+                <div class="contact-full__icon">
+                  {{ mixins.icon(i.icon) }}
+                </div>
+
+                <div class="contact-full__title">
+                  <h3 class="title title--h3 title--arci">{{ i.title | safe }}</h3>
+                </div>
+
+                <div class="contact-full__text text--sm">{{ i.text | safe }}</div>
+              </div>
+              <!-- end contact-full -->
+            </div>
+            {% endfor %}
+          </div>
+          <!-- end contacts -->
+
+          <!-- begin map -->
+          <div class="map">
+            <iframe
+              class="js-lazy"
+              src=""
+              data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.8237588734964!2d30.53839021589552!3d50.425755197024884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf0df5993721%3A0x656b39dd7c2bfc4!2z0J7Qv9C10YDQsNGC0LjQstC90LDRjyDQn9C-0LvQuNCz0YDQsNGE0LjRjy4g0KTQvtGC0L4g0L3QsCDQtNC-0LrRg9C80LXQvdGC0YsuINCo0LjRgNC-0LrQvtGE0L7RgNC80LDRgtC90LDRjyDQv9C10YfQsNGC0Ywg0J_RgNC40L3RgiA3!5e0!3m2!1sru!2sua!4v1575454637846!5m2!1sru!2sua"
+              frameborder="0"
+              style="border:0;"
+              allowfullscreen=""></iframe>
+          </div>
+          <!-- end map -->
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="section__block">
+          <!-- begin block -->
+          <div class="block">
+            <div class="block__title">
+              <h3 class="title title--h3 title--arci">Цены</h3>
+            </div>
+
+            <div class="block__text text--sm">
+              {{ mixins.list(
+                name = 'list',
+                modifications = { wrap: '', item: '', link: '' },
+                list = [
+                  { item: 'Цены нашей полиграфии действуют только при заказе online - через формы сайта (на страницах соответствующих услуг).' },
+                  { item: 'Цены нашей полиграфии действуют только при заказе online - через формы сайта (на страницах соответствующих услуг).' },
+                  { item: 'Цены нашей полиграфии действуют только при заказе online - через формы сайта (на страницах соответствующих услуг).' }
+                ]
+              ) }}
+            </div>
+
+            <div class="block__btn">
+              {{ mixins.btn(
+                title = 'Заказать Online',
+                mod = ''
+              ) }}
+            </div>
+          </div>
+          <!-- end block -->
+        </div>
+        <div class="section__block">
+          <!-- begin block -->
+          <div class="block">
+            <div class="block__title">
+              <h3 class="title title--h3 title--arci">Получение заказа</h3>
+            </div>
+
+            <div class="block__text text--sm">
+              {{ mixins.list(
+                name = 'list',
+                modifications = { wrap: '', item: '', link: '' },
+                list = [
+                  { item: '<strong>Доставка курьером по Киеву:</strong> возможна день в день по готовности (100 грн.) или на следующий день (60 грн.)' },
+                  { item: '<strong>Доставка НП по Украине</strong> (отправка продукции каждый день в конце рабочего дня)' },
+                  { item: '<strong>Самовывоз</strong> Дождитесь письма (по E-mail) о готовности и приходите в офис в рабочее время.' }
+                ]
+              ) }}
+
+              <p><strong>Для получения заказа</strong> (осуществляется без очереди) сообщите менеджеру типографии какая полиграфическая продукция была Вами заказана и имя, на которое оформлялся заказ.</p>
+            </div>
+          </div>
+          <!-- end block -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end section -->

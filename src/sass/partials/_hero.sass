@@ -2,6 +2,12 @@
   $this: &
   position: relative
   background-color: $gray-lightest
+  +cover
+  background-position: 70% 50%
+  padding-top: 30px
+  padding-bottom: 50px
+  &__breadcrumbs
+    margin-bottom: 15px
   &__bg
     position: absolute
     z-index: 0
@@ -48,6 +54,8 @@
       top: 15px
 
   &--home
+    padding-top: 0
+    padding-bottom: 0
     #{$this}__inner
       +lg
         padding-top: 50px

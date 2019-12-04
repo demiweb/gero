@@ -1,0 +1,54 @@
+.block
+  background-color: $white
+  border-radius: $radius-sm
+  padding: 30px 40px
+  box-shadow: 0.551px 1.923px 6px 0px rgba(0, 0, 0, 0.09)
+  +xl
+    padding: 20px 30px
+  +md
+    padding: 15px 20px
+  &__title
+    margin-bottom: 20px
+    +md
+      margin-bottom: 10px
+  &__text
+    +notlast
+      margin-bottom: 25px
+      +md
+        margin-bottom: 15px
+    .list, p
+      +notlast
+        margin-bottom: 1em
+  &__btn
+    text-align: center
+
+  &--sm
+    padding: 5px 20px
+    +xl
+      padding: 5px 20px
+    +md
+      padding: 5px 15px
+  &--gray
+    box-shadow: none
+    background-color: $gray-lightest
+
+.block-nav
+  $this: &
+  &__list
+    +flex(space-between, center, row, wrap)
+    +xl
+      justify-content: flex-start
+  &__item
+    +xl
+      width: 33.33333%
+    +lg
+      width: 50%
+    +xs
+      width: 100%
+  &__link
+    +tr(color .3s)
+    &.is-active
+      color: $accent
+    +hover
+      @extend #{$this}__link.is-active
+

@@ -1,0 +1,24 @@
+---
+title: delivery
+page: delivery
+header: {
+  mod: 'header--light'
+}
+hero: {
+  bg: 'bg-hero-delivery.jpg',
+  breadcrumbs: {
+    list: [
+      { link: 'Главная' },
+      { item: '-' },
+      { link: 'Оплата и доставка', modLink: 'is-active' },
+    ]
+  },
+  title: 'Оплата и доставка'
+}
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+  {% include "partials/_hero.html" %}
+  {% include "partials/sections/_s-delivery.html" %}
+{% endblock %}

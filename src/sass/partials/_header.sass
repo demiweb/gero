@@ -16,7 +16,8 @@
       height: $header-top-height-lg
   &__bottom
     height: $header-bottom-height
-    background-color: $gray
+    background-color: $c-title
+    color: $white
     +lg
       height: 0
   &__inner
@@ -56,7 +57,7 @@
       padding: 15px
       overflow: auto
       height: auto
-      background-color: $gray
+      background-color: $c-title
       +vertical
       +ready
         +tr(opacity .3s, visibility .3s)
@@ -80,6 +81,20 @@
       margin-left: 5px
   &__close
     color: $white
+    display: none
+    +lg
+      display: block
+
+  &--light
+    #{$this}__bottom
+      box-shadow: inset 1.696px -1.06px 19px 0px rgba(0, 0, 0, 0.1)
+      background-color: $white
+      color: $c-title
+    #{$this}__nav
+      +lg
+        background-color: $white
+    #{$this}__close
+      color: $c-title
 
 .header-contact
   +flex(flex-start, center)

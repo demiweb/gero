@@ -10,6 +10,8 @@ h1, h2, h3, h4, h5, h6
   +arci
   font-weight: 400
   +css-lock(21, 36, 320, 1399, font-size)
+  &--sm
+    +css-lock(18, 30, 320, 1399, font-size)
   &--h2
     +css-lock(18, 24, 320, 1399, font-size)
     font-weight: 600
@@ -26,11 +28,38 @@ h1, h2, h3, h4, h5, h6
     +reg
     font-weight: 700
     font-size: 1em !important
+  &--h6
+    +reg
+    font-weight: 700
+    font-size: $fz-sm !important
   &--reg
     +reg
+  &--arci
+    +arci
 
 .text
   &--sm
     font-size: $fz-sm
   &--light
     font-weight: 300
+
+blockquote
+  background-color: $gray-lightest
+  border-radius: $radius
+  padding: 35px
+  position: relative
+  overflow: hidden
+  +before
+    background-color: $accent
+    width: 5px
+    height: 100%
+    top: 0
+    bottom: 0
+    left: 0
+    position: absolute
+    z-index: 1
+
+  +lg
+    padding: 25px
+  +md
+    padding: 15px

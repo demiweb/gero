@@ -1,0 +1,39 @@
+.pagination
+  font-size: $fz-sm
+  color: $c-title
+  text-align: center
+  li
+    display: inline-block
+    vertical-align: middle
+    margin-left: 5px
+    margin-right: 5px
+    +xs
+      margin-left: 1px
+      margin-right: 1px
+  a
+    +flex(center, center)
+    background-color: $white
+    border-radius: 20px
+    height: 40px
+    min-width: 40px
+    box-shadow: 0.276px 0.961px 5px 0px rgba(0, 0, 0, 0.13)
+    +tr(background-color .3s, color .3s)
+    +xs
+      height: 30px
+      min-width: 30px
+    &.is-active
+      background-color: $accent
+      color: $white
+    +hover
+      background-color: $accent
+      color: $white
+    &.next, &.prev
+      background-color: transparent
+      box-shadow: none
+      +before
+        +icon-arrow(10, 10, 1, currentColor, 45)
+        display: block
+        margin-left: .3em
+    &.next
+      transform: scaleX(-1)
+      

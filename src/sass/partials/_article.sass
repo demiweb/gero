@@ -1,0 +1,91 @@
+.article
+  font-size: $fz-sm
+  text-align: justify
+  +clr
+  article
+    +clr
+  p, ul, ol, img, blockquote, figure, h1, h2, h3, h4, h5, h6
+    +notlast
+      margin-bottom: 20px
+      +md
+        margin-bottom: 15px
+  article
+    +notlast
+      margin-bottom: 55px
+      +xl
+        margin-bottom: 40px
+      +lg
+        margin-bottom: 30px
+      +md
+        margin-bottom: 20px 
+  figure
+    font-size: 0
+    img
+      width: 100%
+  h1, h2, h4
+    &:not(.title)
+      @extend .title
+      @extend .title--h2
+  h3
+    &:not(.title)
+      @extend .title
+      @extend .title--h3
+  ul
+    overflow: hidden
+    li
+      +list-bullet
+      padding-left: 1em
+      position: relative
+      &::before
+        margin-right: .5em
+        color: $accent
+        font-size: 2em
+        position: absolute
+        top: -.3em
+        left: 0
+  ol
+    +counter('text', ')')
+    li
+      &::before
+        margin-right: .5em
+  // img
+    // border-radius: $radius-sm
+  img
+    &.is-left
+      float: left
+      margin-right: 30px
+      +md
+        margin-right: 0
+        float: none
+        width: 100%
+  img
+    &.is-right
+      float: right
+      margin-left: 30px
+      +md
+        margin-left: 0
+        float: none
+        width: 100%
+  a
+    color: $blue
+    text-decoration: underline
+  table
+    max-width: 695px
+    td, th
+      text-align: center
+      vertical-align: middle
+      padding: em(10)
+      border: 1px solid $gray-light
+    th
+      font-weight: 700
+
+
+  &--seo
+    max-height: 520px
+    overflow: auto
+    color: $c-title
+    h1, h2, h3, h4, h5, h6
+      +notlast
+        margin-bottom: 15px
+        +md
+          margin-bottom: 10px

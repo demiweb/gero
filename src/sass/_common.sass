@@ -47,4 +47,95 @@ body
   +tr(color .3s)
   +hover
     color: $accent
+
+.date
+  font-size: $fz-xs
+
+.link-arrow
+  $this: &
+  +inline-flex(flex-start, center)
+  font-weight: 700
+  color: $accent
+  +hover
+    &:not(#{$this}--no-hover)
+      #{$this}__arr
+        transform: translate(10px, 0)
+  &__title
+    margin-right: em(20)
+    display: block
+  &__arr
+    width: 60px
+    position: relative
+    display: block
+    +tr(width .5s, transform .5s)
+    +before
+      width: 100%
+      background-color: currentColor
+      height: 1px
+      position: absolute
+      top: 50%
+      transform: translate(0, -50%)
+      right: 0
+    +after
+      +icon-arrow(10, 10, 1, currentColor, 225)
+      position: absolute
+      top: 50%
+      transform: translate(0, -50%) rotate(225deg)
+      right: 0
+
+.list
+  li
+    +list-bullet
+    padding-left: 1em
+    position: relative
+    +notlast
+      margin-bottom: 1em
+    &::before
+      margin-right: .5em
+      color: $accent
+      font-size: 2em
+      position: absolute
+      top: -.3em
+      left: 0
+  &--left
+    margin-left: -1em
+
+.gallery-thumb
+  $this: &
+  // +cover
+  // border-radius: 5px
+  padding-top: 7%
+  // height: 200px
+  position: relative
+  overflow: hidden
+  +hover
+    #{$this}__cover
+      +visible
+  &__img, &__cover    
+    top: 0
+    bottom: 0
+    left: 0
+    right: 5px    
+    position: absolute
+    display: block
+    border-radius: 5px
+  &__img
+    +cover
+    z-index: 0
+  &__cover
+    background-color: rgba($black, .5)
+    +flex(center, center)
+    color: $accent
+    +tr(opacity .3s, visibility .3s)
+    +hidden
+    z-index: 1
+    .icon
+      font-size: em(24)
+
+.link
+  font-weight: 700
+  +tr(color .3s, opacity .3s)
+  color: $accent
+  +hover
+    text-decoration: underline
     

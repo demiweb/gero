@@ -1,8 +1,16 @@
 <a
   href="#"
-  class="card"
+  class="card{% if i.mod %} {{ i.mod }}{% endif %}"
   >
-    <span class="card__img js-lazy" data-background-image="./img/cards/{{ i.img or '30.jpg' }}"></span>
+    {% if i.img %}
+    <span class="card__img js-lazy" data-background-image="./img/cards/{{ i.img }}"></span>
+    {% endif %}
+
+    {% if i.imgInline %}
+    <span class="card__img">
+      <img class="js-lazy" alt="" src="" data-src="./img/cards/{{ i.imgInline }}"/>
+    </span>
+    {% endif %}
 
     <span class="card__content">
       <span class="card__title">

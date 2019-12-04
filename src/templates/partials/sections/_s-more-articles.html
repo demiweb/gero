@@ -1,0 +1,26 @@
+{%set
+articles = [
+  { img: 'OT1C850.jpg', title: 'Как проверить, правильно ли вы 
+задали настройки для печати?' },
+  { img: '19.jpg', title: 'Как устроена Полиграфия? ' },
+  { img: 'OT1C720.jpg', title: 'Как устроена Полиграфия? ' }
+]
+%}
+
+<!-- begin section -->
+<section class="section section--sm">
+  <div class="container">
+    <div class="section__title">
+      <h2 class="title">Не пропустите также</h2>
+    </div>
+    
+    <div class="row">
+      {% for i in articles %}
+      <div class="col-md-4 col-sm-6">
+        {% include "partials/_article-card.html" %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!-- end section -->

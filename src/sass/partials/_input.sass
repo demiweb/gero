@@ -1,0 +1,111 @@
+.input
+  display: block
+  text-align: left
+  position: relative
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="password"],
+  input[type="file"]
+    width: 100%
+    height: em(50)
+    background-color: $gray-lightest
+    border-radius: $radius
+    padding: .85em em(30)
+    font-size: $fz-sm
+  &--radio, &--checkbox
+    user-select: none
+    padding-left: 1.5em
+    cursor: pointer
+    input[type="checkbox"],
+    input[type="radio"]
+      +hidden
+      position: absolute
+      &:checked + span
+        &::after
+          content: ''
+          position: absolute
+          display: block
+    span
+      &::before
+        content: ''
+        border: 1px solid currentColor
+        width: .9em
+        height: .9em
+        top: .2em
+        left: 0
+        background-color: $white
+        position: absolute
+        display: block
+  &--checkbox
+    input[type="checkbox"]
+      &:checked + span
+        &::after
+          +icon-arrow(.9, .3, .05, $accent, -45, em)
+          top: .3em
+          left: .2em
+  &--radio
+    input[type="radio"]
+      &:checked + span
+        &::after
+          width: .6em
+          height: .6em
+          background-color: $accent
+          top: .35em
+          left: .15em
+          border-radius: 50%
+    span
+      &::before
+        border-radius: 50%
+
+.custom-select
+  $this: &
+  position: relative
+  user-select: none
+  cursor: pointer
+  font-size: $fz-sm
+  select
+    +hidden
+    position: absolute
+  &.is-open
+    #{$this}__panel
+      +visible
+  &__opener
+    background-color: $gray-lightest
+    border-radius: $radius
+    padding: .85em em(30)
+    padding-right: 2.5em
+    height: em(50)
+    // +flex(space-between, center)
+    position: relative
+    +text-overflow
+    +after
+      +icon-arrow(6, 6, 1, currentColor, -45)
+      position: absolute
+      top: 50%
+      transform: translate(0, -50%) rotate(-45deg)
+      right: 1.8em
+      z-index: 1
+      pointer-events: none
+
+  &__panel
+    position: absolute
+    width: 100%
+    z-index: 1
+    background-color: $gray-lightest
+    top: calc(100% + 10px)
+    left: 0
+    border-radius: $radius
+    max-height: 300px
+    overflow: auto
+    +hidden
+    +ready
+      +tr(opacity .3s, visibility .3s)
+  &__option
+    cursor: pointer
+    padding: 1em 1.5em
+    +tr(background-color .3s, color .3s)
+    +hover
+      color: $accent
+
+

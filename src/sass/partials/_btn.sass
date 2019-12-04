@@ -1,4 +1,5 @@
 .btn
+  $this: &
   display: inline-block
   text-align: center
   color: $white
@@ -10,7 +11,7 @@
   border: 1px solid $accent
   +tr(background-color .3s, border-color .3s, color .3s, opacity .3s)
   +hover
-    &:not(.btn--no-hover)
+    &:not(#{$this}--no-hover)
       opacity: .7
   +xs
     min-width: 0

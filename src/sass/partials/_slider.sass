@@ -1,0 +1,44 @@
+.prev, .next
+  width: 25px
+  height: 25px
+  box-shadow: 0.276px 0.961px 5px 0px rgba(0, 0, 0, 0.13)
+  border-radius: 50%
+  +flex(center, center)
+  +tr(background-color .3s, color .3s)
+  +hover
+    color: $white
+    background-color: $accent
+  +before
+    +icon-arrow(8, 8, 2, currentColor, 45)
+    display: block
+    margin-left: .1em
+  &[disabled]
+    opacity: .5
+
+.next
+  transform: scaleX(-1)
+
+.slider
+  &__wrap
+    position: relative
+    padding-left: 45px
+    padding-right: 45px
+    .tns-ovh
+      // padding-left: 10px
+      // padding-right: 10px
+  &__controls
+    position: absolute
+    top: 50%
+    transform: translate(0, -50%)
+    width: 100%
+    left: 0
+  &__prev, &__next
+    position: absolute
+    top: 50%
+    transform: translate(0, -50%)
+    z-index: 1
+  &__prev
+    left: 0
+  &__next
+    right: 0
+    transform: translate(0, -50%) scaleX(-1)

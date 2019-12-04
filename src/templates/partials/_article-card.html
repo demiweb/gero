@@ -1,0 +1,33 @@
+<a
+  href="#"
+  class="card card--lg card--shadow-mod"
+  >
+    {% if i.img %}
+    <span class="card__img js-lazy" data-background-image="./img/cards/{{ i.img }}"></span>
+    {% endif %}
+
+    <span class="card__content">
+      <span class="card__date">
+        <span class="date">{{ mixins.icon('calendar') }} 15/02/2019</span>
+      </span>
+
+      <span class="card__title">
+        <span class="title title--h3">{{ i.title | safe }}</span>
+      </span>
+
+      <span class="card__text text--sm">
+        {% if i.text %}
+          {{ i.text | safe}}
+        {% else %}
+        Переплетный цех всегда занимает много места, особенно, когда печатают «толстые» книги и секций для подбора листов много. Здесь есть и полностью автоматические...
+        {% endif %}
+      </span>
+
+      <span class="card__btn">
+        <span class="link-arrow link-arrow--no-hover">
+          <span class="link-arrow__title">Читать статью</span>
+          <span class="link-arrow__arr"></span>
+        </span>
+      </span>
+    </span>
+  </a>

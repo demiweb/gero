@@ -1,0 +1,172 @@
+{%set
+form = {
+  fields: [
+    {
+      name: 'input',
+      mod:  '',
+      type: 'text',
+      placeholder: 'ФИО',
+      fieldClass: '',
+      fieldAttributes: '',
+      options: [],
+      label: {}
+    },
+    {
+      name: 'input',
+      mod:  '',
+      type: 'email',
+      placeholder: 'Email',
+      fieldClass: '',
+      fieldAttributes: '',
+      options: [],
+      label: {}
+    },
+    {
+      name: 'input',
+      mod:  '',
+      type: 'tel',
+      placeholder: '+38 (_ _ _) _ _ _ - _ _ - _ _',
+      fieldClass: '',
+      fieldAttributes: '',
+      options: [],
+      label: {}
+    },
+    {
+      name: 'file',
+      mod:  '',
+      type: 'file',
+      placeholder: '',
+      fieldClass: '',
+      fieldAttributes: '',
+      options: [],
+      label: {}
+    },
+    {
+      name: 'select',
+      mod:  '',
+      type: '',
+      placeholder: '',
+      fieldClass: 'js-select',
+      fieldAttributes: { 'data-type': 'default' },
+      options: [
+        { value: 1, option: 'Требуется прошивка' },
+        { value: 2, option: 'Требуется прошивка1' },
+        { value: 3, option: 'Требуется прошивка2' }
+      ],
+      label: {}
+    }
+  ],
+  blocks: [
+    { radios: true, title: 'Выберите способ доставки:' },
+    { checkboxes: true, title: 'Дополнительно:' }
+  ]
+}
+%}  
+
+<!-- begin block -->
+<div class="block form">
+  <form>
+    <div class="form__title">
+      <h3 class="title title--sm">Заказать онлайн</h3>
+    </div>
+    <div class="form__subttl text--sm">Оставьте ваши контактные данные 
+      и загрузите ваш макет. Мы свяжемся 
+    с вами после обработки заявки!</div>
+
+    <div class="form__block">
+      {% for i in form.fields %}
+      <div class="form__field">
+        {{ mixins.input(
+          name = i.name,
+          mod = i.mod,
+          type = i.type,
+          placeholder = i.placeholder,
+          value = '',
+          fieldClass = i.fieldClass,
+          fieldAttributes = i.fieldAttributes,
+          options = i.options,
+          label = i.label
+        ) }}
+      </div>
+      {% endfor %}
+    </div>
+
+    {% for i in form.blocks %}
+    <div class="form__block">
+      <div class="form__block-title">
+        <h6 class="title title--h6">{{ i.title | safe }}</h6>
+      </div>
+
+      {% if i.radios %}
+      <div class="form__radios">
+        {{ mixins.input(
+          name = 'radio',
+          mod = '',
+          type = 'radio',
+          placeholder = '',
+          value = '',
+          fieldClass = '',
+          label = { last: '<span>Самовывоз</span>' },
+          fieldAttributes = { name: 'delivery' }
+        ) }}
+        {{ mixins.input(
+          name = 'radio',
+          mod = '',
+          type = 'radio',
+          placeholder = '',
+          value = '',
+          fieldClass = '',
+          label = { last: '<span>Новая почта</span>' },
+          fieldAttributes = { name: 'delivery', checked: '' }
+        ) }}
+      </div>
+      {% endif %}
+      {% if i.checkboxes %}
+      <div class="form__checkboxes">
+        {{ mixins.input(
+          name = 'checkbox',
+          mod = '',
+          type = 'checkbox',
+          placeholder = '',
+          value = '',
+          fieldClass = '',
+          label = { last: '<span>Папка</span>' }
+        ) }}
+        {{ mixins.input(
+          name = 'checkbox',
+          mod = '',
+          type = 'checkbox',
+          placeholder = '',
+          value = '',
+          fieldClass = '',
+          label = { last: '<span>Надпись «Дипломная работа»</span>' }
+        ) }}
+        {{ mixins.input(
+          name = 'checkbox',
+          mod = '',
+          type = 'checkbox',
+          placeholder = '',
+          value = '',
+          fieldClass = '',
+          label = { last: '<span>Запись на диск</span>' }
+        ) }}
+      </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+
+    <div class="form__field">
+      {{ mixins.btn(
+        title = 'Отправить',
+        mod = '',
+        href = false
+      ) }}
+    </div>
+
+    <div class="text--sm">Нажимая на кнопку, я соглашаюсь с правилами
+и политикой конфиденциальности</div>
+
+    
+  </form>
+</div>
+<!-- end block -->

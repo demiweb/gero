@@ -1,0 +1,41 @@
+---
+title: service
+page: service
+aside: {
+  full: true
+}
+services: [
+  { mod: 'card--shadow-mod', imgInline: '11.png', title: 'Твердый переплет дипломные работы' },
+  { mod: 'card--shadow-mod', imgInline: '1.png', title: 'Твердый переплет диссертации' },
+  { mod: 'card--shadow-mod', imgInline: 'ref.png', title: 'Авторефераты диссертаций' },
+  { mod: 'card--shadow-mod', imgInline: '4049.970.png', title: 'Раздаточный материал' },
+  { mod: 'card--shadow-mod', imgInline: '12.png', title: 'Цветная и ч/б распечатка А4' },
+  { mod: 'card--shadow-mod', imgInline: 'pop_braiz_a4.png', title: 'Цветная и ч/б распечатка А3' },
+  { mod: 'card--shadow-mod', imgInline: 'presentation.png', title: 'Презентации' }
+]
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+  {% include "partials/sections/_s-service.html" %}
+  
+  <!-- begin section -->
+  <section id="services" class="section">
+    <div class="container">
+
+
+      <div class="section__title">
+        <h2 class="title">Дополнительные услуги</h2>
+      </div>
+
+      <div class="row">
+        {% for i in services %}
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          {% include "partials/_service-card.html" %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  <!-- end section -->
+{% endblock %}

@@ -1,0 +1,921 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>service</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fff" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" media="all" href="css/app.css" />
+  </head>
+  <body>
+    <!-- BEGIN content -->
+    <div class="out">
+      <!-- begin header -->
+      <header class="header">
+        <div class="header__top">
+          <div class="container">
+            <div class="header__inner">
+              <div class="header__logo">
+                <a href="/" class="logo">
+                  <img class="js-lazy" alt="" src="" data-src="./img/logo.png" />
+                </a>
+              </div>
+              <div class="header__contacts">
+                <!-- begin header-contact -->
+                <div class="header__contact header-contact">
+                  <div class="header-contact__icon">
+                    <!-- begin icon-placeholder -->
+                    <svg viewBox="0 0 54.757 54.757" class="icon icon-placeholder" width="1.000em" height="1em">
+                      <path d="M40.94 5.617A19.052 19.052 0 0027.38 0a19.05 19.05 0 00-13.56 5.617c-6.703 6.702-7.536 19.312-1.804 26.952L27.38 54.757 42.721 32.6c5.755-7.671 4.922-20.281-1.781-26.983zM27.557 26c-3.859 0-7-3.141-7-7s3.141-7 7-7 7 3.141 7 7-3.141 7-7 7z" />
+                    </svg>
+                    <!-- end icon-placeholder -->
+                  </div>
+                  <div class="header-contact__text">Киев, бул. Марии Приймаченко, 1/27</div>
+                </div>
+                <!-- end header-contact -->
+                <!-- begin header-contact -->
+                <div class="header__contact header-contact">
+                  <div class="header-contact__icon">
+                    <!-- begin icon-envelope -->
+                    <svg viewBox="0 0 512 512" class="icon icon-envelope" width="1.000em" height="1em">
+                      <path d="M10.688 95.156C80.958 154.667 204.26 259.365 240.5 292.01c4.865 4.406 10.083 6.646 15.5 6.646 5.406 0 10.615-2.219 15.469-6.604 36.271-32.677 159.573-137.385 229.844-196.896 4.375-3.698 5.042-10.198 1.5-14.719C494.625 69.99 482.417 64 469.333 64H42.667c-13.083 0-25.292 5.99-33.479 16.438-3.542 4.52-2.875 11.02 1.5 14.718z" />
+                      <path d="M505.813 127.406a10.618 10.618 0 00-11.375 1.542C416.51 195.01 317.052 279.688 285.76 307.885c-17.563 15.854-41.938 15.854-59.542-.021-33.354-30.052-145.042-125-208.656-178.917a10.674 10.674 0 00-11.375-1.542A10.674 10.674 0 000 137.083v268.25C0 428.865 19.135 448 42.667 448h426.667C492.865 448 512 428.865 512 405.333v-268.25a10.66 10.66 0 00-6.187-9.677z" />
+                    </svg>
+                    <!-- end icon-envelope -->
+                  </div>
+                  <div class="header-contact__text"><a href="mailto:testemail.ua@gmail.com">testemail.ua@gmail.com</a></div>
+                </div>
+                <!-- end header-contact -->
+                <!-- begin header-contact -->
+                <div class="header__contact header-contact">
+                  <div class="header-contact__icon">
+                    <!-- begin icon-clock -->
+                    <svg viewBox="0 0 299.995 299.995" class="icon icon-clock" width="1.000em" height="1em">
+                      <path d="M149.995 0C67.156 0 0 67.158 0 149.995s67.156 150 149.995 150 150-67.163 150-150S232.834 0 149.995 0zm64.847 178.524H151.25c-.215 0-.415-.052-.628-.06-.213.01-.412.06-.628.06-5.729 0-10.374-4.645-10.374-10.374V62.249c0-5.729 4.645-10.374 10.374-10.374s10.374 4.645 10.374 10.374v95.527h54.47c5.729 0 10.374 4.645 10.374 10.374 0 5.729-4.641 10.374-10.37 10.374z" />
+                    </svg>
+                    <!-- end icon-clock -->
+                  </div>
+                  <div class="header-contact__text">
+                    <p>Пн - Пт</p>
+                    <p>9:00 - 18:00</p>
+                  </div>
+                </div>
+                <!-- end header-contact -->
+                <!-- begin header-contact -->
+                <div class="header__contact header-contact header__phone">
+                  <div class="header-contact__icon">
+                    <!-- begin icon-call-answer -->
+                    <svg width="1.000em" height="1em" viewBox="0 0 348.077 348.077" class="icon icon-call-answer">
+                      <path d="M340.273 275.083l-53.755-53.761c-10.707-10.664-28.438-10.34-39.518.744l-27.082 27.076a792.327 792.327 0 01-5.344-2.973c-17.102-9.476-40.509-22.464-65.14-47.113-24.704-24.701-37.704-48.144-47.209-65.257-1.003-1.813-1.964-3.561-2.913-5.221l18.176-18.149 8.936-8.947c11.097-11.1 11.403-28.826.721-39.521L73.39 8.194c-10.682-10.68-28.421-10.356-39.518.744l-15.15 15.237.414.411c-5.08 6.482-9.325 13.958-12.484 22.02C3.74 54.28 1.927 61.603 1.098 68.941-6 127.785 20.89 181.564 93.866 254.541c100.875 100.868 182.167 93.248 185.674 92.876 7.638-.913 14.958-2.738 22.397-5.627 7.992-3.122 15.463-7.361 21.941-12.43l.331.294 15.348-15.029c11.074-11.098 11.393-28.83.716-39.542z" />
+                    </svg>
+                    <!-- end icon-call-answer -->
+                  </div>
+                  <div class="header-contact__text">
+                    <a href="tel:+380964864565">+38 (096) 486-45-65</a>
+                    <p><button class="header-contact__small">Заказать звонок</button></p>
+                  </div>
+                </div>
+                <!-- end header-contact -->
+              </div>
+              <div class="header__lang">
+                <!-- begin lang -->
+                <div class="lang">
+                  <ul>
+                    <li><a href="#" class=" is-active">Ru</a></li>
+                    <li>/</li>
+                    <li><a href="#">Ua</a></li>
+                  </ul>
+                </div>
+                <!-- end lang -->
+              </div>
+              <div class="header__burger">
+                <button class="burger js-burger"><span></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="container">
+            <div class="header__inner">
+              <div class="header__nav js-menu">
+                <button class="header__close close js-menu-close"></button>
+                <div class="header__nav-in">
+                  <!-- begin nav -->
+                  <nav class="nav">
+                    <ul>
+                      <li><a href="#">Для студентов и диссертантов</a></li>
+                      <li><a href="#" class=" is-active">Широкоформатная печать</a></li>
+                      <li><a href="#">Широкоформатное копирование</a></li>
+                      <li><a href="#">Дополнительные услуги</a></li>
+                      <li><a href="#">Требования к макетам</a></li>
+                      <li><a href="#">Доставка и оплата</a></li>
+                      <li><a href="#">Полезная информация</a></li>
+                      <li><a href="#">Контакты</a></li>
+                    </ul>
+                  </nav>
+                  <!-- end nav -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+      <!-- begin main -->
+      <main class="main">
+        <!-- begin section -->
+        <section class="section">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="section__breadcrumbs">
+                  <!-- begin breadcrumbs -->
+                  <div class="breadcrumbs">
+                    <ul>
+                      <li><a href="#">Главная</a></li>
+                      <li>-</li>
+                      <li><a href="#">Для студентов и диссертантов</a></li>
+                      <li>-</li>
+                      <li><a href="#" class=" is-active">Твердый переплет Дипломная работа</a></li>
+                    </ul>
+                  </div>
+                  <!-- end breadcrumbs -->
+                </div>
+                <div class="section__title">
+                  <h1 class="title">Твердый переплет Дипломная работа</h1>
+                </div>
+                <div class="section__nav">
+                  <!-- begin block -->
+                  <div class="block block--sm">
+                    <!-- begin block-nav -->
+                    <div class="block-nav">
+                      <ul class="block-nav__list">
+                        <li class="block-nav__item "><a href="#about" class="block-nav__link js-scroll-to is-active">Об услуге</a></li>
+                        <li class="block-nav__item "><a href="#prices" class="block-nav__link js-scroll-to ">Таблица с ценами</a></li>
+                        <li class="block-nav__item "><a href="#matherials" class="block-nav__link js-scroll-to ">Какие материалы используем</a></li>
+                        <li class="block-nav__item "><a href="#works" class="block-nav__link js-scroll-to ">Выполненые работы</a></li>
+                        <li class="block-nav__item "><a href="#services" class="block-nav__link js-scroll-to ">Дополнительные услуги</a></li>
+                      </ul>
+                    </div>
+                    <!-- end block-nav -->
+                  </div>
+                  <!-- end block -->
+                </div>
+                <!-- begin article -->
+                <div class="article mb-md">
+                  <article id="about">
+                    <figure>
+                      <img class="js-lazy" alt="" src="" data-src="./img/service/15.jpg" />
+                    </figure>
+                    <img class="js-lazy is-right" alt="" src="" data-src="./img/service/36.jpg" />
+                    <p>За долгое время своего существования компания ГЕРО помогла тысячам студентов в оформлении и печати дипломных работ. Ваши дипломные работы, диссертации, рефераты мы с радостью напечатаем на профессиональном уровне и переплетем, а также сделаем тиснение золотом или серебром! Вы даже можете заказать доставку своей отпечатанной дипломной работы на дом или забрать из нашего офиса. Руководит предприятием вот этот человек — Павел Арсеньев. Человек, который с нуля организовал свой.. </p>
+                    <p>Он начинал проект с нуля, когда в этом месте еще ничего не было. Павел составлял бизнес-план, проектировал типографию, подбирал оборудование, формировал команду менеджеров и сотрудников, находил место под застройку и контролировал её. Все обязаны только Павлу Арсеньеву! Именно он всех контролирует.</p>
+                    <img class="js-lazy is-left" alt="" src="" data-src="./img/service/37.jpg" />
+                    <p>Главная ценность ГЕРО – люди. Нам важно выстраивать долгосрочные и продуктивные взаимоотношения со всеми людьми, которые формируют бренд ГЕРО – это наши любимые клиенты, сотрудники</p>
+                    <ol>
+                      <li>Kinder</li>
+                      <li>Nestle</li>
+                      <li>Fanta</li>
+                      <li>Motor Generals</li>
+                    </ol>
+                    <p>Он начинал проект с нуля, когда в этом месте еще ничего не было. Павел составлял сам бизнес-план, проектировал сво типографию, подбирал оборудование, формировал команду менеджеров и сотрудников, находил место под застройку и контролировал её от первого дня до последнего. В производство вложено почти три миллиарда рублей и сейчас типография вышла на расчетную мощность, работая всегда круглосуточно, целых семь дней:.</p>
+                    <ul>
+                      <li>команда менеджеров и сотрудников</li>
+                      <li>сотрудники конкурентов</li>
+                      <li>директора всех ближайших отделений</li>
+                      <li>льготы и специальные предложения</li>
+                    </ul>
+                  </article>
+                  <article id="prices">
+                    <p><em>Стоимость указана для печати Online на офисной бумаге, 80 гр./кв.м. </em></p>
+                    <table>
+                      <tr>
+                        <th>количество <br> листов</th>
+                        <th>ч/б печать <br> (текст и графики)</th>
+                        <th>печать цветная <br> (заливка до 30%)</th>
+                        <th>печать цветная <br> (больше 30%)</th>
+                      </tr>
+                      <tr>
+                        <td><strong>1-2</strong></td>
+                        <td>2.00</td>
+                        <td>4.00</td>
+                        <td>8.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>1-2</strong></td>
+                        <td>2.00</td>
+                        <td>4.00</td>
+                        <td>8.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>1-2</strong></td>
+                        <td>2.00</td>
+                        <td>4.00</td>
+                        <td>8.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>1-2</strong></td>
+                        <td>2.00</td>
+                        <td>4.00</td>
+                        <td>8.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>1-2</strong></td>
+                        <td>2.00</td>
+                        <td>4.00</td>
+                        <td>8.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>1-2</strong></td>
+                        <td>2.00</td>
+                        <td>4.00</td>
+                        <td>8.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>1-2</strong></td>
+                        <td>2.00</td>
+                        <td>4.00</td>
+                        <td>8.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>1-2</strong></td>
+                        <td>2.00</td>
+                        <td>4.00</td>
+                        <td>8.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>1-2</strong></td>
+                        <td>2.00</td>
+                        <td>4.00</td>
+                        <td>8.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>1-2</strong></td>
+                        <td>2.00</td>
+                        <td>4.00</td>
+                        <td>8.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>1-2</strong></td>
+                        <td>2.00</td>
+                        <td>4.00</td>
+                        <td>8.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>1-2</strong></td>
+                        <td>2.00</td>
+                        <td>4.00</td>
+                        <td>8.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>1-2</strong></td>
+                        <td>2.00</td>
+                        <td>4.00</td>
+                        <td>8.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>1-2</strong></td>
+                        <td>2.00</td>
+                        <td>4.00</td>
+                        <td>8.00</td>
+                      </tr>
+                    </table>
+                  </article>
+                  <article id="matherials">
+                    <!-- begin block -->
+                    <div class="block block--gray">
+                      <!-- begin list -->
+                      <div class="list list--left">
+                        <ul>
+                          <li>Мы сделаем точный расчет и согласуем техническое задание, подскажем с материалами и дизайном</li>
+                          <li>Оплатить можно наличными, картой онлайн, по безналичному расчету (мы выдаем чек и все закрывающие документы)</li>
+                          <li>Мы упакуем Ваш заказ, и Вы сможете получить его в нашем офисе или заказать доставку в любую точку </li>
+                          <li>Мы сделаем точный расчет и согласуем техническое задание, подскажем с материалами и дизайном</li>
+                          <li>Оплатить можно наличными, картой онлайн, по безналичному расчету (мы выдаем чек и все закрывающие документы)</li>
+                          <li>Мы упакуем Ваш заказ, и Вы сможете получить его в нашем офисе или заказать доставку в любую точку </li>
+                        </ul>
+                      </div>
+                      <!-- end list -->
+                    </div>
+                    <!-- end block -->
+                  </article>
+                  <article id="works">
+                    <div class="section__title">
+                      <h2 class="title">Выполненные работы</h2>
+                    </div>
+                    <!-- begin slider -->
+                    <div class="slider__wrap">
+                      <div class="slider js-slider js-lightgallery" data-slider="gallery">
+                        <a href="./img/21.jpg" class="slide gallery-thumb">
+                          <span class="gallery-thumb__img js-lazy" data-background-image="./img/21.jpg"></span>
+                          <span class="gallery-thumb__cover">
+                            <!-- begin icon-search -->
+                            <svg viewBox="0 0 56.966 56.966" class="icon icon-search" width="1.000em" height="1em">
+                              <path d="M55.146 51.887L41.588 37.786A22.926 22.926 0 0046.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 00.083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z" />
+                            </svg>
+                            <!-- end icon-search -->
+                          </span>
+                        </a>
+                        <a href="./img/21.jpg" class="slide gallery-thumb">
+                          <span class="gallery-thumb__img js-lazy" data-background-image="./img/21.jpg"></span>
+                          <span class="gallery-thumb__cover">
+                            <!-- begin icon-search -->
+                            <svg viewBox="0 0 56.966 56.966" class="icon icon-search" width="1.000em" height="1em">
+                              <path d="M55.146 51.887L41.588 37.786A22.926 22.926 0 0046.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 00.083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z" />
+                            </svg>
+                            <!-- end icon-search -->
+                          </span>
+                        </a>
+                        <a href="./img/21.jpg" class="slide gallery-thumb">
+                          <span class="gallery-thumb__img js-lazy" data-background-image="./img/21.jpg"></span>
+                          <span class="gallery-thumb__cover">
+                            <!-- begin icon-search -->
+                            <svg viewBox="0 0 56.966 56.966" class="icon icon-search" width="1.000em" height="1em">
+                              <path d="M55.146 51.887L41.588 37.786A22.926 22.926 0 0046.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 00.083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z" />
+                            </svg>
+                            <!-- end icon-search -->
+                          </span>
+                        </a>
+                        <a href="./img/21.jpg" class="slide gallery-thumb">
+                          <span class="gallery-thumb__img js-lazy" data-background-image="./img/21.jpg"></span>
+                          <span class="gallery-thumb__cover">
+                            <!-- begin icon-search -->
+                            <svg viewBox="0 0 56.966 56.966" class="icon icon-search" width="1.000em" height="1em">
+                              <path d="M55.146 51.887L41.588 37.786A22.926 22.926 0 0046.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 00.083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z" />
+                            </svg>
+                            <!-- end icon-search -->
+                          </span>
+                        </a>
+                        <a href="./img/21.jpg" class="slide gallery-thumb">
+                          <span class="gallery-thumb__img js-lazy" data-background-image="./img/21.jpg"></span>
+                          <span class="gallery-thumb__cover">
+                            <!-- begin icon-search -->
+                            <svg viewBox="0 0 56.966 56.966" class="icon icon-search" width="1.000em" height="1em">
+                              <path d="M55.146 51.887L41.588 37.786A22.926 22.926 0 0046.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 00.083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z" />
+                            </svg>
+                            <!-- end icon-search -->
+                          </span>
+                        </a>
+                        <a href="./img/21.jpg" class="slide gallery-thumb">
+                          <span class="gallery-thumb__img js-lazy" data-background-image="./img/21.jpg"></span>
+                          <span class="gallery-thumb__cover">
+                            <!-- begin icon-search -->
+                            <svg viewBox="0 0 56.966 56.966" class="icon icon-search" width="1.000em" height="1em">
+                              <path d="M55.146 51.887L41.588 37.786A22.926 22.926 0 0046.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 00.083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z" />
+                            </svg>
+                            <!-- end icon-search -->
+                          </span>
+                        </a>
+                        <a href="./img/21.jpg" class="slide gallery-thumb">
+                          <span class="gallery-thumb__img js-lazy" data-background-image="./img/21.jpg"></span>
+                          <span class="gallery-thumb__cover">
+                            <!-- begin icon-search -->
+                            <svg viewBox="0 0 56.966 56.966" class="icon icon-search" width="1.000em" height="1em">
+                              <path d="M55.146 51.887L41.588 37.786A22.926 22.926 0 0046.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 00.083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z" />
+                            </svg>
+                            <!-- end icon-search -->
+                          </span>
+                        </a>
+                        <a href="./img/21.jpg" class="slide gallery-thumb">
+                          <span class="gallery-thumb__img js-lazy" data-background-image="./img/21.jpg"></span>
+                          <span class="gallery-thumb__cover">
+                            <!-- begin icon-search -->
+                            <svg viewBox="0 0 56.966 56.966" class="icon icon-search" width="1.000em" height="1em">
+                              <path d="M55.146 51.887L41.588 37.786A22.926 22.926 0 0046.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 00.083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z" />
+                            </svg>
+                            <!-- end icon-search -->
+                          </span>
+                        </a>
+                        <a href="./img/21.jpg" class="slide gallery-thumb">
+                          <span class="gallery-thumb__img js-lazy" data-background-image="./img/21.jpg"></span>
+                          <span class="gallery-thumb__cover">
+                            <!-- begin icon-search -->
+                            <svg viewBox="0 0 56.966 56.966" class="icon icon-search" width="1.000em" height="1em">
+                              <path d="M55.146 51.887L41.588 37.786A22.926 22.926 0 0046.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 00.083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z" />
+                            </svg>
+                            <!-- end icon-search -->
+                          </span>
+                        </a>
+                        <a href="./img/21.jpg" class="slide gallery-thumb">
+                          <span class="gallery-thumb__img js-lazy" data-background-image="./img/21.jpg"></span>
+                          <span class="gallery-thumb__cover">
+                            <!-- begin icon-search -->
+                            <svg viewBox="0 0 56.966 56.966" class="icon icon-search" width="1.000em" height="1em">
+                              <path d="M55.146 51.887L41.588 37.786A22.926 22.926 0 0046.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 00.083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z" />
+                            </svg>
+                            <!-- end icon-search -->
+                          </span>
+                        </a>
+                      </div>
+                      <div class="slider__controls">
+                        <button class="slider__prev prev js-slider-prev"></button>
+                        <button class="slider__next next js-slider-next"></button>
+                      </div>
+                    </div>
+                    <!-- end slider -->
+                  </article>
+                </div>
+                <!-- end article -->
+              </div>
+              <div class="col-lg-4">
+                <div class="section__block">
+                  <!-- begin block -->
+                  <div class="block form">
+                    <form>
+                      <div class="form__title">
+                        <h3 class="title title--sm">Заказать онлайн</h3>
+                      </div>
+                      <div class="form__subttl text--sm">Оставьте ваши контактные данные и загрузите ваш макет. Мы свяжемся с вами после обработки заявки!</div>
+                      <div class="form__block">
+                        <div class="form__field">
+                          <!-- begin input -->
+                          <div class="input">
+                            <input type="text" placeholder="ФИО">
+                          </div>
+                          <!-- end input -->
+                        </div>
+                        <div class="form__field">
+                          <!-- begin input -->
+                          <div class="input">
+                            <input type="email" placeholder="Email">
+                          </div>
+                          <!-- end input -->
+                        </div>
+                        <div class="form__field">
+                          <!-- begin input -->
+                          <div class="input">
+                            <input type="tel" placeholder="+38 (_ _ _) _ _ _ - _ _ - _ _">
+                          </div>
+                          <!-- end input -->
+                        </div>
+                        <div class="form__field">
+                          <!-- begin file -->
+                          <label class="input input--file">
+                            <input type="file">
+                          </label>
+                          <!-- end file -->
+                        </div>
+                        <div class="form__field">
+                          <!-- begin select -->
+                          <div class="input input--select">
+                            <select class="js-select" data-type="default">
+                              <option value="1">Требуется прошивка</option>
+                              <option value="2">Требуется прошивка1</option>
+                              <option value="3">Требуется прошивка2</option>
+                            </select>
+                          </div>
+                          <!-- end select -->
+                        </div>
+                      </div>
+                      <div class="form__block">
+                        <div class="form__block-title">
+                          <h6 class="title title--h6">Выберите способ доставки:</h6>
+                        </div>
+                        <div class="form__radios">
+                          <!-- begin radio -->
+                          <label class="input input--radio">
+                            <input type="radio" name="delivery">
+                            <span>Самовывоз</span>
+                          </label>
+                          <!-- end radio -->
+                          <!-- begin radio -->
+                          <label class="input input--radio">
+                            <input type="radio" name="delivery" checked="">
+                            <span>Новая почта</span>
+                          </label>
+                          <!-- end radio -->
+                        </div>
+                      </div>
+                      <div class="form__block">
+                        <div class="form__block-title">
+                          <h6 class="title title--h6">Дополнительно:</h6>
+                        </div>
+                        <div class="form__checkboxes">
+                          <!-- begin checkbox -->
+                          <label class="input input--checkbox">
+                            <input type="checkbox">
+                            <span>Папка</span>
+                          </label>
+                          <!-- end checkbox -->
+                          <!-- begin checkbox -->
+                          <label class="input input--checkbox">
+                            <input type="checkbox">
+                            <span>Надпись «Дипломная работа»</span>
+                          </label>
+                          <!-- end checkbox -->
+                          <!-- begin checkbox -->
+                          <label class="input input--checkbox">
+                            <input type="checkbox">
+                            <span>Запись на диск</span>
+                          </label>
+                          <!-- end checkbox -->
+                        </div>
+                      </div>
+                      <div class="form__field">
+                        <button class="btn">Отправить</button>
+                      </div>
+                      <div class="text--sm">Нажимая на кнопку, я соглашаюсь с правилами и политикой конфиденциальности</div>
+                    </form>
+                  </div>
+                  <!-- end block -->
+                </div>
+                <div class="section__block">
+                  <!-- begin block -->
+                  <div class="block">
+                    <div class="block__title">
+                      <h3 class="title title--h3 title--arci">Требования к макету</h3>
+                    </div>
+                    <div class="block__text">
+                      <!-- begin list -->
+                      <div class="list list--left">
+                        <ul>
+                          <li><strong>Макет без меток</strong> приводки, резки, фальцовки, подписей цвета и любых других элементов, выходящих рамку края макета;</li>
+                          <li><strong>Файл с макетом</strong> не должен содержать лишних элементов <em>(скрытых элементов в слои)</em>, которые не печатаются! </li>
+                          <li>Макет, изготовленный в программах для векторной графики должен иметь четкий размер, ограниченный прозрачной рамкой за которой только пустое поле! Никаких линий, текстов, точек или других элементов!</li>
+                          <li>Все элементы <strong>макета</strong>, включая растровые и векторные иллюстрации, должны быть выполнены в цветовых пространствах CMYK, Grayscale. RGB допускается только для плакатов с предупреждением о автозамене неоновых цветов;</li>
+                          <li>Текст не должен располагаться ближе <em>5 мм</em>. от края макета; размер макета должен превышать размер готового изделия на <em>4 мм</em>. по высоте и на <em>4 мм</em>. по длине для подрезки, как показано на схеме выше.</li>
+                        </ul>
+                      </div>
+                      <!-- end list -->
+                    </div>
+                  </div>
+                  <!-- end block -->
+                </div>
+                <div class="section__block">
+                  <!-- begin block -->
+                  <div class="block">
+                    <div class="block__title">
+                      <h3 class="title title--h3 title--arci">Условия заказа</h3>
+                    </div>
+                    <div class="block__text">
+                      <!-- begin list -->
+                      <div class="list list--left">
+                        <ul>
+                          <li>Наша компания осуществляет заказы от <strong>100 грн</strong>. Доставка заказов платная - дорогу оплачивает покупатель. </li>
+                          <li>Стоимость доставки расчитывается по тарифам, выбранного перевозчика. </li>
+                          <li>Полученный нами заказ отправляется на сборку. Менеджер свяжется с Вами что бы оговорить возможные замены, если вдруг отсутствует какая-либо товарная позиция. </li>
+                          <li>В случае, если Вы сделали заказ и выбрали способом оплаты <strong>«Предоплата на карту Приватбанка»</strong> и в Вашем заказе все есть в наличии — мы отправляем Вам смс сообщение с реквизитами и суммой на оплату.</li>
+                        </ul>
+                      </div>
+                      <!-- end list -->
+                    </div>
+                  </div>
+                  <!-- end block -->
+                </div>
+                <div class="section__title">
+                  <h3 class="title title--sm">Интересные статьи</h3>
+                </div>
+                <div class="section__block">
+                  <a href="#" class="card card--lg card--shadow-mod">
+                    <span class="card__content">
+                      <span class="card__date">
+                        <span class="date">
+                          <!-- begin icon-calendar -->
+                          <svg viewBox="0 0 512 512" class="icon icon-calendar" width="1.000em" height="1em">
+                            <circle cx="386" cy="210" r="20" />
+                            <path d="M432 40h-26V20c0-11.046-8.954-20-20-20s-20 8.954-20 20v20h-91V20c0-11.046-8.954-20-20-20s-20 8.954-20 20v20h-90V20c0-11.046-8.954-20-20-20s-20 8.954-20 20v20H80C35.888 40 0 75.888 0 120v312c0 44.112 35.888 80 80 80h153c11.046 0 20-8.954 20-20s-8.954-20-20-20H80c-22.056 0-40-17.944-40-40V120c0-22.056 17.944-40 40-40h25v20c0 11.046 8.954 20 20 20s20-8.954 20-20V80h90v20c0 11.046 8.954 20 20 20s20-8.954 20-20V80h91v20c0 11.046 8.954 20 20 20s20-8.954 20-20V80h26c22.056 0 40 17.944 40 40v114c0 11.046 8.954 20 20 20s20-8.954 20-20V120c0-44.112-35.888-80-80-80z" />
+                            <path d="M391 270c-66.72 0-121 54.28-121 121s54.28 121 121 121 121-54.28 121-121-54.28-121-121-121zm0 202c-44.663 0-81-36.336-81-81s36.337-81 81-81 81 36.336 81 81-36.337 81-81 81z" />
+                            <path d="M420 371h-9v-21c0-11.046-8.954-20-20-20s-20 8.954-20 20v41c0 11.046 8.954 20 20 20h29c11.046 0 20-8.954 20-20s-8.954-20-20-20z" />
+                            <circle cx="299" cy="210" r="20" />
+                            <circle cx="212" cy="297" r="20" />
+                            <circle cx="125" cy="210" r="20" />
+                            <circle cx="125" cy="297" r="20" />
+                            <circle cx="125" cy="384" r="20" />
+                            <circle cx="212" cy="384" r="20" />
+                            <circle cx="212" cy="210" r="20" />
+                          </svg>
+                          <!-- end icon-calendar --> 15/02/2019</span>
+                      </span>
+                      <span class="card__title">
+                        <span class="title title--h3">Как проверить, правильно ли вы задали настройки для печати?</span>
+                      </span>
+                      <span class="card__text text--sm"> Наша компания осуществляет заказы от 100 грн. Доставка заказов платная - дорогу оплачивает покупатель. Стоимость доставки расчитывается по тарифам, выбранн... перевозчика. </span>
+                      <span class="card__btn">
+                        <span class="link-arrow link-arrow--no-hover">
+                          <span class="link-arrow__title">Читать статью</span>
+                          <span class="link-arrow__arr"></span>
+                        </span>
+                      </span>
+                    </span>
+                  </a>
+                </div>
+                <div class="section__block">
+                  <a href="#" class="card card--lg card--shadow-mod">
+                    <span class="card__content">
+                      <span class="card__date">
+                        <span class="date">
+                          <!-- begin icon-calendar -->
+                          <svg viewBox="0 0 512 512" class="icon icon-calendar" width="1.000em" height="1em">
+                            <circle cx="386" cy="210" r="20" />
+                            <path d="M432 40h-26V20c0-11.046-8.954-20-20-20s-20 8.954-20 20v20h-91V20c0-11.046-8.954-20-20-20s-20 8.954-20 20v20h-90V20c0-11.046-8.954-20-20-20s-20 8.954-20 20v20H80C35.888 40 0 75.888 0 120v312c0 44.112 35.888 80 80 80h153c11.046 0 20-8.954 20-20s-8.954-20-20-20H80c-22.056 0-40-17.944-40-40V120c0-22.056 17.944-40 40-40h25v20c0 11.046 8.954 20 20 20s20-8.954 20-20V80h90v20c0 11.046 8.954 20 20 20s20-8.954 20-20V80h91v20c0 11.046 8.954 20 20 20s20-8.954 20-20V80h26c22.056 0 40 17.944 40 40v114c0 11.046 8.954 20 20 20s20-8.954 20-20V120c0-44.112-35.888-80-80-80z" />
+                            <path d="M391 270c-66.72 0-121 54.28-121 121s54.28 121 121 121 121-54.28 121-121-54.28-121-121-121zm0 202c-44.663 0-81-36.336-81-81s36.337-81 81-81 81 36.336 81 81-36.337 81-81 81z" />
+                            <path d="M420 371h-9v-21c0-11.046-8.954-20-20-20s-20 8.954-20 20v41c0 11.046 8.954 20 20 20h29c11.046 0 20-8.954 20-20s-8.954-20-20-20z" />
+                            <circle cx="299" cy="210" r="20" />
+                            <circle cx="212" cy="297" r="20" />
+                            <circle cx="125" cy="210" r="20" />
+                            <circle cx="125" cy="297" r="20" />
+                            <circle cx="125" cy="384" r="20" />
+                            <circle cx="212" cy="384" r="20" />
+                            <circle cx="212" cy="210" r="20" />
+                          </svg>
+                          <!-- end icon-calendar --> 15/02/2019</span>
+                      </span>
+                      <span class="card__title">
+                        <span class="title title--h3">Как устроена Полиграфия? </span>
+                      </span>
+                      <span class="card__text text--sm"> Полиграфия - это специально спроектированное и построенное здание из нескольких огромных, хорошо освещенных, чистых помещений, разделенных на зоны... </span>
+                      <span class="card__btn">
+                        <span class="link-arrow link-arrow--no-hover">
+                          <span class="link-arrow__title">Читать статью</span>
+                          <span class="link-arrow__arr"></span>
+                        </span>
+                      </span>
+                    </span>
+                  </a>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="link">Читать все статьи</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end section -->
+        <!-- begin section -->
+        <section id="services" class="section">
+          <div class="container">
+            <div class="section__title">
+              <h2 class="title">Дополнительные услуги</h2>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <a href="#" class="card card--shadow-mod">
+                  <span class="card__img">
+                    <img class="js-lazy" alt="" src="" data-src="./img/cards/11.png" />
+                  </span>
+                  <span class="card__content">
+                    <span class="card__title">
+                      <span class="title title--h3">Твердый переплет дипломные работы</span>
+                    </span>
+                    <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                    <span class="card__btn">
+                      <span class="btn btn--no-hover">Заказать Online</span>
+                    </span>
+                  </span>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <a href="#" class="card card--shadow-mod">
+                  <span class="card__img">
+                    <img class="js-lazy" alt="" src="" data-src="./img/cards/1.png" />
+                  </span>
+                  <span class="card__content">
+                    <span class="card__title">
+                      <span class="title title--h3">Твердый переплет диссертации</span>
+                    </span>
+                    <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                    <span class="card__btn">
+                      <span class="btn btn--no-hover">Заказать Online</span>
+                    </span>
+                  </span>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <a href="#" class="card card--shadow-mod">
+                  <span class="card__img">
+                    <img class="js-lazy" alt="" src="" data-src="./img/cards/ref.png" />
+                  </span>
+                  <span class="card__content">
+                    <span class="card__title">
+                      <span class="title title--h3">Авторефераты диссертаций</span>
+                    </span>
+                    <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                    <span class="card__btn">
+                      <span class="btn btn--no-hover">Заказать Online</span>
+                    </span>
+                  </span>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <a href="#" class="card card--shadow-mod">
+                  <span class="card__img">
+                    <img class="js-lazy" alt="" src="" data-src="./img/cards/4049.970.png" />
+                  </span>
+                  <span class="card__content">
+                    <span class="card__title">
+                      <span class="title title--h3">Раздаточный материал</span>
+                    </span>
+                    <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                    <span class="card__btn">
+                      <span class="btn btn--no-hover">Заказать Online</span>
+                    </span>
+                  </span>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <a href="#" class="card card--shadow-mod">
+                  <span class="card__img">
+                    <img class="js-lazy" alt="" src="" data-src="./img/cards/12.png" />
+                  </span>
+                  <span class="card__content">
+                    <span class="card__title">
+                      <span class="title title--h3">Цветная и ч/б распечатка А4</span>
+                    </span>
+                    <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                    <span class="card__btn">
+                      <span class="btn btn--no-hover">Заказать Online</span>
+                    </span>
+                  </span>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <a href="#" class="card card--shadow-mod">
+                  <span class="card__img">
+                    <img class="js-lazy" alt="" src="" data-src="./img/cards/pop_braiz_a4.png" />
+                  </span>
+                  <span class="card__content">
+                    <span class="card__title">
+                      <span class="title title--h3">Цветная и ч/б распечатка А3</span>
+                    </span>
+                    <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                    <span class="card__btn">
+                      <span class="btn btn--no-hover">Заказать Online</span>
+                    </span>
+                  </span>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <a href="#" class="card card--shadow-mod">
+                  <span class="card__img">
+                    <img class="js-lazy" alt="" src="" data-src="./img/cards/presentation.png" />
+                  </span>
+                  <span class="card__content">
+                    <span class="card__title">
+                      <span class="title title--h3">Презентации</span>
+                    </span>
+                    <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                    <span class="card__btn">
+                      <span class="btn btn--no-hover">Заказать Online</span>
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end section -->
+      </main>
+      <!-- end main -->
+      <!-- begin footer -->
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="container">
+            <div class="footer__inner">
+              <div class="footer__nav">
+                <div class="footer__block">
+                  <div class="footer__title">
+                    <h5 class="title title--h5">Для студентов и диссертантов</h5>
+                  </div>
+                  <div class="footer__nav-block">
+                    <!-- begin nav -->
+                    <nav class="nav nav--footer">
+                      <ul>
+                        <li><a href="#">Твердый переплет Дипломные работы</a></li>
+                        <li><a href="#">Твердый переплет Диссертации</a></li>
+                        <li><a href="#">Твердый переплет </a></li>
+                        <li><a href="#">Твердый переплет </a></li>
+                        <li><a href="#">Твердый переплет </a></li>
+                        <li><a href="#">Твердый переплет</a></li>
+                        <li><a href="#">Твердый переплет </a></li>
+                      </ul>
+                    </nav>
+                    <!-- end nav -->
+                  </div>
+                </div>
+                <div class="footer__block">
+                  <div class="footer__title">
+                    <h5 class="title title--h5">Широкоформатная печать</h5>
+                  </div>
+                  <div class="footer__nav-block">
+                    <!-- begin nav -->
+                    <nav class="nav nav--footer">
+                      <ul>
+                        <li><a href="#">Чертежи</a></li>
+                        <li><a href="#">Проекты</a></li>
+                        <li><a href="#">Планшеты</a></li>
+                        <li><a href="#">Чертежи</a></li>
+                        <li><a href="#">Проекты</a></li>
+                        <li><a href="#">Планшеты</a></li>
+                      </ul>
+                    </nav>
+                    <!-- end nav -->
+                  </div>
+                </div>
+                <div class="footer__block">
+                  <div class="footer__title">
+                    <h5 class="title title--h5">Широкоформатное копирование</h5>
+                  </div>
+                  <div class="footer__nav-block">
+                    <!-- begin nav -->
+                    <nav class="nav nav--footer">
+                      <ul>
+                        <li><a href="#">Чертежи</a></li>
+                        <li><a href="#">Проекты</a></li>
+                        <li><a href="#">Планшеты</a></li>
+                        <li><a href="#">Чертежи</a></li>
+                        <li><a href="#">Проекты</a></li>
+                        <li><a href="#">Планшеты</a></li>
+                      </ul>
+                    </nav>
+                    <!-- end nav -->
+                  </div>
+                </div>
+                <div class="footer__block">
+                  <div class="footer__title">
+                    <h5 class="title title--h5">Дополнительные услуги</h5>
+                  </div>
+                  <div class="footer__nav-block">
+                    <!-- begin nav -->
+                    <nav class="nav nav--footer">
+                      <ul>
+                        <li><a href="#">Прошивка на металлическую пружину</a></li>
+                        <li><a href="#">Проекты</a></li>
+                        <li><a href="#">Прошивка на металлическую пружину</a></li>
+                        <li><a href="#">Чертежи</a></li>
+                        <li><a href="#">Прошивка на металлическую пружину</a></li>
+                        <li><a href="#">Планшеты</a></li>
+                      </ul>
+                    </nav>
+                    <!-- end nav -->
+                  </div>
+                </div>
+              </div>
+              <div class="footer__contacts">
+                <div class="footer__contacts-in">
+                  <div class="footer__block">
+                    <div class="footer__title">
+                      <h5 class="title title--h5">Контакты</h5>
+                    </div>
+                    <div class="footer__nav-block">
+                      <!-- begin  -->
+                      <div class=" nav nav--footer">
+                        <ul>
+                          <li><a href="tel:+380964844565">+38 (096) 484-45-65</a></li>
+                          <li>Киев, бул. Марии Приймаченко, 1/27</li>
+                          <li><a href="mailto:testemail.ua@gmail.com">testemail.ua@gmail.com</a></li>
+                        </ul>
+                      </div>
+                      <!-- end  -->
+                    </div>
+                  </div>
+                  <div class="footer__block">
+                    <div class="footer__title">
+                      <h5 class="title title--h5">Клиенту</h5>
+                    </div>
+                    <div class="footer__nav-block">
+                      <!-- begin  -->
+                      <div class=" nav nav--footer">
+                        <ul>
+                          <li><a href="#">Оплата и доставка</a></li>
+                          <li><a href="#">Контакты</a></li>
+                          <li><a href="#">Блог</a></li>
+                        </ul>
+                      </div>
+                      <!-- end  -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="container">
+            <div class="footer__bottom-in">
+              <div class="footer__auth">
+                <div class="footer__auth-icon">
+                  <!-- begin icon-D -->
+                  <svg width="1.000em" height="1em" viewBox="0 0 2834.65 2834.65" class="icon icon-D">
+                    <path d="M2277.478 452.18C2004.532 191.052 1652.85 60.488 1222.475 60.488H147.778v1693.604h606.261V607.661h468.436c246.699 0 446.796 77.456 600.331 232.271 153.487 154.864 230.278 354.34 230.278 598.382 0 246.7-76.127 446.789-228.333 600.324-152.205 153.536-352.967 230.279-602.276 230.279H147.778v547.173h1074.696c427.765 0 778.782-131.181 1053.009-393.638 274.228-262.457 411.389-590.506 411.389-984.139 0-396.294-136.497-725.005-409.394-986.133z" />
+                  </svg>
+                  <!-- end icon-D -->
+                </div>
+                <div class="footer__auth-text"> Developed by <a href="#">Demiweb International</a>
+                </div>
+              </div>
+              <div class="footer__copy">Компания «геро» занимается производством печатной продукции в Киеве с 1995 года.</div>
+              <div class="footer__text">Минимальный заказ от 100 грн</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end footer -->
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
+</html>

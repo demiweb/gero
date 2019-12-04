@@ -11,7 +11,7 @@
   +md
     padding-top: 30px
     padding-bottom: 30px
-  &__title
+  &__title, &__nav
     margin-bottom: 30px
     +md
       margin-bottom: 15px
@@ -28,9 +28,38 @@
   &__inner
     position: relative
     z-index: 1
+  &__block
+    +notlast
+      margin-bottom: 30px
+      +sm
+        margin-bottom: 15px
+  &__contacts
+    height: 100%
+    +flex(flex-start, normal, column)
+    +md
+      height: auto
+      margin-bottom: 30px
+    +sm
+      margin-bottom: 15px
+    .map
+      flex-grow: 1
+  &__breadcrumbs
+    @extend .hero__breadcrumbs
 
   &--gray
     background-color: $gray-lightest
+  &--sm
+    padding-top: 30px
+    padding-bottom: 30px
+    +xl
+      padding-top: 30px
+      padding-bottom: 30px
+    +lg
+      padding-top: 30px
+      padding-bottom: 30px
+    +md
+      padding-top: 30px
+      padding-bottom: 30px
 
 .s-contacts
   +xs

@@ -2,3 +2,10 @@ ProjectTitle: gero
 
 PageList:
 - file: home.html
+- file: blog.html
+- file: blog-article.html
+- file: contacts.html
+- file: delivery.html
+- file: requirements.html
+- file: section.html
+- file: service.html

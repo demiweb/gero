@@ -8,14 +8,16 @@
   border: 1px solid transparent
   height: calc(100% - 30px)
   margin-bottom: 30px
-  +tr(border-color .5s, height .5s)
+  +tr(border-color .5s, height .5s, box-shadow .3s)
   +sm
     margin-bottom: 15px
     height: calc(100% - 15px)
   +hover
-    border-color: $accent
-    #{$this}__btn
-      max-height: 100px
+    &:not(.card--shadow-mod)
+      border-color: $accent
+    &:not(.card--lg)
+      #{$this}__btn
+        max-height: 100px
   &__content
     flex-grow: 1
     background-color: $white
@@ -31,6 +33,11 @@
     display: block
     +cover
     padding-top: 60%
+    position: relative
+    img
+      +vcenter
+      max-height: 100%
+      z-index: 1
   &__title
     margin-bottom: 10px
     display: block
@@ -43,3 +50,23 @@
     max-height: 0
     overflow: hidden
     +tr(max-height .5s)
+  &__date
+    margin-bottom: 15px
+    display: block
+    +md
+      margin-bottom: 10px
+
+  &--shadow-mod
+    box-shadow: 0.551px 1.923px 6px 0px rgba(0, 0, 0, 0.09)
+    +hover
+      box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.15)
+
+  &--lg
+    text-align: left    
+    #{$this}__btn
+      max-height: none
+      overflow: visible
+    #{$this}__content
+      justify-content: flex-start
+    #{$this}__text
+      flex-grow: 1

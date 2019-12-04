@@ -1,0 +1,24 @@
+---
+title: requirements
+page: requirements
+header: {
+  mod: 'header--light'
+}
+hero: {
+  bg: 'bg-hero-requirements.jpg',
+  breadcrumbs: {
+    list: [
+      { link: 'Главная' },
+      { item: '-' },
+      { link: 'Контакты', modLink: 'is-active' },
+    ]
+  },
+  title: 'Контакты'
+}
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+  {% include "partials/_hero.html" %}
+  {% include "partials/sections/_s-requirements.html" %}
+{% endblock %}
