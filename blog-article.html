@@ -74,7 +74,7 @@
                   </div>
                   <div class="header-contact__text">
                     <a href="tel:+380964864565">+38 (096) 486-45-65</a>
-                    <p><button class="header-contact__small">Заказать звонок</button></p>
+                    <p><button class="header-contact__small js-popup-open" data-popup-target="call">Заказать звонок</button></p>
                   </div>
                 </div>
                 <!-- end header-contact -->
@@ -105,7 +105,17 @@
                   <!-- begin nav -->
                   <nav class="nav">
                     <ul>
-                      <li><a href="#">Для студентов и диссертантов</a></li>
+                      <li class=" js-dropdown"><a href="#">Для студентов и диссертантов</a>
+                        <ul>
+                          <li><a href="#">Тверый переплет (Дипломные работы)</a></li>
+                          <li><a href="#">Тверый переплет (Диссертации)</a></li>
+                          <li><a href="#">Авторефераты диссертаций</a></li>
+                          <li><a href="#">Раздаточный материал</a></li>
+                          <li><a href="#">Цветная и ч/б распечатка А4</a></li>
+                          <li><a href="#">Цветная и ч/б распечатка А3</a></li>
+                          <li><a href="#">Презентации</a></li>
+                        </ul>
+                      </li>
                       <li><a href="#" class=" is-active">Широкоформатная печать</a></li>
                       <li><a href="#">Широкоформатное копирование</a></li>
                       <li><a href="#">Дополнительные услуги</a></li>
@@ -462,6 +472,44 @@
       <!-- end footer -->
     </div>
     <!-- END content -->
+    <!-- begin popup -->
+    <div class="popup js-popup" data-popup="call">
+      <div class="popup__inner">
+        <button class="popup__close close js-popup-close"></button>
+        <div class="popup__title">
+          <h2 class="title title--sm">Заказать звонок</h2>
+        </div>
+        <div class="popup__subttl text--sm">Оставьте ваши контактные данные <br> и мы свяжемся с вами после обработки заявки!</div>
+        <div class="popup__form">
+          <!-- begin form -->
+          <div class="form">
+            <form>
+              <div class="form__block">
+                <div class="form__field">
+                  <!-- begin input -->
+                  <div class="input">
+                    <input type="text" placeholder="ФИО">
+                  </div>
+                  <!-- end input -->
+                </div>
+                <div class="form__field">
+                  <!-- begin input -->
+                  <div class="input">
+                    <input type="tel" placeholder="+38 (_ _ _) _ _ _ - _ _ - _ _">
+                  </div>
+                  <!-- end input -->
+                </div>
+              </div>
+              <div class="form__field">
+                <button class="btn">Отправить</button>
+              </div>
+            </form>
+          </div>
+          <!-- end form -->
+        </div>
+      </div>
+    </div>
+    <!-- end popup -->
     <!-- BEGIN scripts -->
     <script type="text/javascript" src="js/app.js"></script>
     <!-- END scripts -->
