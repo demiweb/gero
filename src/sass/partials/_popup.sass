@@ -1,0 +1,36 @@
+.popup
+  position: fixed
+  z-index: 15
+  overflow: auto
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  padding: 15px
+  background-color: rgba($black, .9)
+  +vertical
+  +ready
+    +tr(opacity .3s, visibility .3s)
+  +hidden
+  &.is-active
+    +visible
+  &__inner
+    @extend .block
+    @extend .block--lg
+    box-shadow: none
+    display: inline-block
+    vertical-align: middle
+    font-size: $fz
+    position: relative
+    width: 100%
+    max-width: 450px
+    +sm
+      font-size: $fz-sm-px
+  &__title
+    margin-bottom: 10px
+  &__subttl
+    margin-bottom: 30px
+    +md
+      margin-bottom: 15px
+  &__close
+    color: $c-title

@@ -15,6 +15,8 @@ import setSliders from './components/setSliders';
 import setGallery from './components/setGallery';
 import setSelects from './components/selects/setSelects';
 import scrollTo from './components/scrollTo';
+import setPopups from './components/setPopups';
+import toggleMenuDropdown from './components/toggleMenuDropdown';
 
 document.addEventListener('DOMContentLoaded', () => {
   sayHello();
@@ -29,4 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
   setGallery();
   setSelects();
   scrollTo();
+  setPopups();
+  toggleMenuDropdown();
 });

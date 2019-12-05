@@ -9,3 +9,4 @@ PageList:
 - file: requirements.html
 - file: section.html
 - file: service.html
+- file: 404.html

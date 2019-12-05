@@ -1,16 +1,61 @@
 .nav
-  // color: $white
   font-weight: 300
   ul
     +flex(space-between, center)
     +lg
       display: block
   li
+    position: relative    
+    +hover
+      > ul
+        +visible
     +lg
       padding-top: 8px
       padding-bottom: 8px
+    > ul
+      position: absolute
+      display: block
+      z-index: 1
+      top: 100%
+      left: 0
+      box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.19)
+      background-color: $white
+      padding: 20px
+      color: $c-title
+      width: 430px
+      +ready
+        +tr(opacity .3s, visibility .3s, max-height .5s)
+      +lgmin
+        +hidden
+      +lg
+        position: static
+        width: auto
+        background-color: transparent
+        box-shadow: none
+        color: $white
+        padding-top: 0
+        padding-bottom: 0
+        font-size: .8em
+        max-height: 0
+        overflow: hidden
+      &.is-open
+        +visible
+      li
+        padding-top: .5em
+        padding-bottom: .5em
+      a
+        height: auto
+        display: inline
+        +hover
+          text-decoration: none
+
   a
+    +flex(flex-start, center)
+    height: $header-bottom-height
     +tr(color .3s)
+    +lg
+      display: inline
+      height: auto
     +hover
       color: #a9a9a9
       text-decoration: underline
@@ -30,9 +75,30 @@
       +notlast
         margin-bottom: 10px
     a
+      display: inline
+      height: auto
       +hover
         text-decoration: none
         color: $c-text
       &.is-active
         text-decoration: none
         color: $c-text
+
+  &--content
+    color: $blue
+    text-decoration: underline
+    font-size: $fz-sm
+    ul
+      flex-wrap: wrap
+      +lg
+        display: flex
+    li
+      width: 50%
+      padding-right: 10px
+      margin-bottom: .5em
+      +lg
+        padding-top: 0
+        padding-bottom: 0
+    a
+      display: inline
+      height: auto

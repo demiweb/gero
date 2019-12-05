@@ -1,0 +1,52 @@
+<!-- begin popup -->
+<div class="popup js-popup" data-popup="call">
+  <div class="popup__inner">
+    <button class="popup__close close js-popup-close"></button>
+
+    <div class="popup__title">
+      <h2 class="title title--sm">Заказать звонок</h2>
+    </div>
+
+    <div class="popup__subttl text--sm">Оставьте ваши контактные данные <br> и мы свяжемся с вами после обработки заявки!</div>
+
+    <div class="popup__form">
+      <!-- begin form -->
+      <div class="form">
+        <form>
+          <div class="form__block">
+            <div class="form__field">
+              {{ mixins.input(
+                name = 'input',
+                mod = '',
+                type = 'text',
+                placeholder = 'ФИО',
+                value = '',
+                fieldClass = ''
+              ) }}
+            </div>
+            <div class="form__field">
+              {{ mixins.input(
+                name = 'input',
+                mod = '',
+                type = 'tel',
+                placeholder = '+38 (_ _ _) _ _ _ - _ _ - _ _',
+                value = '',
+                fieldClass = ''
+              ) }}
+            </div>
+          </div>
+          <div class="form__field">
+            {{ mixins.btn(
+              title = 'Отправить',
+              mod = '',
+              href = false
+            ) }}
+          </div>
+        </form>
+      </div>
+      <!-- end form -->
+    </div>
+
+  </div>
+</div>
+<!-- end popup -->

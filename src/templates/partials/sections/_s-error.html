@@ -1,0 +1,51 @@
+<!-- begin section -->
+<section class="section">
+  <div class="container">
+    <div class="section__breadcrumbs">
+      {{ mixins.list(
+        name = 'breadcrumbs',
+        modifications = { wrap: '', item: '', link: '' },
+        list = [
+          { item: '', link: 'Главная', modItem: '', modLink: '' },
+          { item: '-', link: 'Главная', modItem: '', modLink: '' },
+          { item: '', link: '404', modItem: '', modLink: 'is-active' }
+        ]
+      ) }}
+    </div>
+
+    <div class="row align-items-center">
+      <div class="col-xl-5 col-sm-6 order-1 order-sm-0">
+        <!-- begin error -->
+        <div class="error">
+          <div class="error__text-block">
+            {{ mixins.textBlock(
+              title = { title: 'Такой страницы не существует ' },
+              text = { text: 'Но мы подготовили для вас несколько полезных ссылок:' }
+            ) }}
+          </div>
+
+          <div class="error__nav">
+            {{ mixins.list(
+              name = 'nav',
+              modifications = { wrap: 'nav--content', item: '', link: '' },
+              list = [
+                { link: 'Главная' },
+                { link: 'Полезная информация' },
+                { link: 'Контакты' },                
+                { link: 'Доставка и оплата' }
+              ]
+            ) }}
+          </div>
+        </div>
+        <!-- end error -->
+      </div>
+
+      <div class="col-xl-5 col-sm-6  text-center">
+        <div class="error-text" data-text="404">
+          <div class="error-text__title">404</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end section -->

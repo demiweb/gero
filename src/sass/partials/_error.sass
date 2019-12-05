@@ -1,0 +1,29 @@
+.error
+  padding-top: 15%
+  padding-bottom: 15%
+  +xs
+    padding-bottom: 0
+    padding-top: 0px
+  &__text-block
+    margin-bottom: 15px
+  &__nav
+    max-width: 350px
+
+.error-text
+  +arci
+  color: $accent
+  +css-lock(100, 218, 320, 1399, font-size)
+  position: relative
+  line-height: 1
+  text-align: center
+  display: inline-block    
+  &::before
+    content: attr(data-text)
+    position: absolute
+    z-index: 0
+    top: .03em
+    right: -.03em
+    color: $accent-dark
+  &__title
+    position: relative
+    z-index: 1
