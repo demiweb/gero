@@ -11,9 +11,7 @@ export default () => {
       if (entry.isIntersecting) {
         const { id } = entry.target
 
-        const [currentBtn] = btns.filter(
-          btn => btn.getAttribute('href') === `#${id}`
-        )
+        const [currentBtn] = btns.filter(btn => btn.getAttribute('href') === `#${id}`)
 
         btns.forEach(btn => {
           if (btn !== currentBtn) btn.classList.remove(IS_ACTIVE)

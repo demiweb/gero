@@ -19,8 +19,7 @@ export default () => {
 
     const offset = header.offsetHeight + nav.offsetHeight
 
-    const top =
-      target.getBoundingClientRect().top + document.body.scrollTop - offset
+    const top = target.getBoundingClientRect().top + document.body.scrollTop - offset
 
     if (btns.length > 0)
       btns.forEach(button => {
