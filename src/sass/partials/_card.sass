@@ -12,6 +12,8 @@
   +sm
     margin-bottom: 15px
     height: calc(100% - 15px)
+  +xs
+    border-radius: $radius-sm
   +hover
     &:not(.card--shadow-mod)
       border-color: $accent
@@ -22,18 +24,21 @@
     flex-grow: 1
     background-color: $white
     padding: 25px
+    height: 220px
     +flex(center, normal, column)
     +lg
       padding: 20px
     +md
       padding: 15px
-  &__text
-    display: block
+    +xs
+      height: auto
   &__img
     display: block
     +cover
     padding-top: 60%
     position: relative
+    +xs
+      padding-top: 90%
     img
       +vcenter
       max-height: 100%
@@ -42,10 +47,18 @@
     margin-bottom: 10px
     display: block
   &__text
-    margin-bottom: 15px
+    margin-bottom: 15px    
+    max-height: 3em
+    overflow: hidden
     display: block
+    display: -webkit-box
+    -webkit-line-clamp: 2
+    -webkit-box-orient: vertical
     +md
       margin-bottom: 10px
+    +xs
+      overflow: visible
+
   &__btn
     max-height: 0
     overflow: hidden

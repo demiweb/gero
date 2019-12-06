@@ -1,6 +1,6 @@
-import Popup from 'popup-simple';
+import Popup from 'popup-simple'
 
 export default () => {
-  const popup = new Popup();
-  popup.init();
-};
+  const popup = new Popup()
+  popup.init()
+}

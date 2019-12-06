@@ -1,5 +1,5 @@
 .nav
-  font-weight: 300
+  font-weight: 700
   ul
     +flex(space-between, center)
     +lg
@@ -52,20 +52,23 @@
   a
     +flex(flex-start, center)
     height: $header-bottom-height
+    padding-right: 10px
     +tr(color .3s)
     +lg
       display: inline
       height: auto
+      padding-right: 0
     +hover
-      color: #a9a9a9
-      text-decoration: underline
+      color: $accent
+      // text-decoration: underline
     &.is-active
-      color: #a9a9a9
-      text-decoration: underline
+      color: $accent
+      // text-decoration: underline
 
   &--footer
     color: $c-title
     font-size: $fz-sm
+    font-weight: 300
     ul
       display: block
     li
@@ -88,6 +91,7 @@
     color: $blue
     text-decoration: underline
     font-size: $fz-sm
+    font-weight: 400
     ul
       flex-wrap: wrap
       +lg
@@ -102,3 +106,4 @@
     a
       display: inline
       height: auto
+      padding-right: 0

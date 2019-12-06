@@ -52,14 +52,17 @@ services = [
         <div class="services-tabs__content">
           {% for j in tabs %}
           <div class="services-tabs__item js-tabs-item{% if j.mod %} {{ j.mod }}{% endif %}" data-tab="{{ j.name }}">
-            <div class="row">           
-            
-            {% for i in services %}
-            <div class="col-lg-3 col-md-4 col-sm-6">
-              {% include "partials/_service-card.html" %}
+            <!-- begin services -->
+            <div class="services">           
+              <div class="row">     
+                {% for i in services %}
+                <div class="col-lg-3 col-md-4 col-6">
+                  {% include "partials/_service-card.html" %}
+                </div>
+                {% endfor %}
+              </div>
             </div>
-            {% endfor %}
-            </div>
+            <!-- end services -->
           </div>
           {% endfor %}
         </div>

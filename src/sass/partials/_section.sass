@@ -15,6 +15,14 @@
     margin-bottom: 30px
     +md
       margin-bottom: 15px
+  &__nav
+    position: sticky
+    top: $header-bottom-height
+    z-index: 9
+    +lg
+      top: $header-top-height-lg
+    +xs
+      position: static
   &__bg
     background-color: $gray
     +coverdiv
