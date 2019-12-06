@@ -19,6 +19,7 @@ import scrollTo from './components/scrollTo'
 import setPopups from './components/setPopups'
 import toggleMenuDropdown from './components/toggleMenuDropdown'
 import fixHeader from './components/fixHeader'
+import toggleSectionNavLinks from './components/toggleSectionNavLinks'
 
 document.addEventListener('DOMContentLoaded', () => {
   sayHello()
@@ -38,4 +39,5 @@ document.addEventListener('DOMContentLoaded', () => {
   setPopups()
   toggleMenuDropdown()
   fixHeader()
+  toggleSectionNavLinks()
 })
