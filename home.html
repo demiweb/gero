@@ -13,7 +13,7 @@
     <!-- BEGIN content -->
     <div class="out">
       <!-- begin header -->
-      <header class="header">
+      <header class="header js-header">
         <div class="header__top">
           <div class="container">
             <div class="header__inner">
@@ -139,21 +139,6 @@
         <section class="hero hero--home">
           <div class="hero__bg hero__bg-left js-lazy" data-background-image="./img/hero/bg-hero-home-left.jpg"></div>
           <div class="hero__bg hero__bg-right js-lazy" data-background-image="./img/hero/bg-hero-home-right.jpg"></div>
-          <div class="hero__label">
-            <!-- begin hero-label -->
-            <div class="hero-label">
-              <div class="hero-label__icon">
-                <!-- begin icon-passage-of-time -->
-                <svg width="1.000em" height="1em" viewBox="0 0 47.001 47.001" class="icon icon-passage-of-time">
-                  <path d="M46.907 20.12a.989.989 0 00-.896-.569h-2.927C41.223 9.452 32.355 1.775 21.726 1.775 9.747 1.775 0 11.522 0 23.501s9.746 21.725 21.726 21.725c7.731 0 14.941-4.161 18.816-10.857a1.975 1.975 0 00-.722-2.699 1.971 1.971 0 00-2.697.72c-3.172 5.481-9.072 8.887-15.397 8.887-9.801 0-17.776-7.974-17.776-17.774 0-9.802 7.975-17.776 17.776-17.776 8.442 0 15.515 5.921 17.317 13.825h-2.904a.99.99 0 00-.896.569.985.985 0 00.136 1.051l4.938 5.925a.988.988 0 001.517 0l4.938-5.925a.987.987 0 00.135-1.052z" />
-                  <path d="M21.726 6.713a1.975 1.975 0 00-1.975 1.975v11.984a3.451 3.451 0 00-1.481 2.83 3.461 3.461 0 003.457 3.457c.522 0 1.014-.125 1.458-.334l6.87 3.965a1.974 1.974 0 101.974-3.419L25.152 23.2a3.44 3.44 0 00-1.449-2.526V8.688a1.979 1.979 0 00-1.977-1.975zm0 18.269a1.483 1.483 0 01-1.481-1.48c0-.816.665-1.481 1.481-1.481s1.481.665 1.481 1.481c0 .815-.665 1.48-1.481 1.48z" />
-                </svg>
-                <!-- end icon-passage-of-time -->
-              </div>
-              <div class="hero-label__title">Оперативная печать за 10 минут</div>
-            </div>
-            <!-- end hero-label -->
-          </div>
           <div class="hero__inner">
             <div class="container">
               <div class="row">
@@ -188,6 +173,21 @@
                   </div>
                 </div>
               </div>
+              <div class="hero__label">
+                <!-- begin hero-label -->
+                <div class="hero-label">
+                  <div class="hero-label__icon">
+                    <!-- begin icon-passage-of-time -->
+                    <svg width="1.000em" height="1em" viewBox="0 0 47.001 47.001" class="icon icon-passage-of-time">
+                      <path d="M46.907 20.12a.989.989 0 00-.896-.569h-2.927C41.223 9.452 32.355 1.775 21.726 1.775 9.747 1.775 0 11.522 0 23.501s9.746 21.725 21.726 21.725c7.731 0 14.941-4.161 18.816-10.857a1.975 1.975 0 00-.722-2.699 1.971 1.971 0 00-2.697.72c-3.172 5.481-9.072 8.887-15.397 8.887-9.801 0-17.776-7.974-17.776-17.774 0-9.802 7.975-17.776 17.776-17.776 8.442 0 15.515 5.921 17.317 13.825h-2.904a.99.99 0 00-.896.569.985.985 0 00.136 1.051l4.938 5.925a.988.988 0 001.517 0l4.938-5.925a.987.987 0 00.135-1.052z" />
+                      <path d="M21.726 6.713a1.975 1.975 0 00-1.975 1.975v11.984a3.451 3.451 0 00-1.481 2.83 3.461 3.461 0 003.457 3.457c.522 0 1.014-.125 1.458-.334l6.87 3.965a1.974 1.974 0 101.974-3.419L25.152 23.2a3.44 3.44 0 00-1.449-2.526V8.688a1.979 1.979 0 00-1.977-1.975zm0 18.269a1.483 1.483 0 01-1.481-1.48c0-.816.665-1.481 1.481-1.481s1.481.665 1.481 1.481c0 .815-.665 1.48-1.481 1.48z" />
+                    </svg>
+                    <!-- end icon-passage-of-time -->
+                  </div>
+                  <div class="hero-label__title">Оперативная печать за 10 минут</div>
+                </div>
+                <!-- end hero-label -->
+              </div>
             </div>
           </div>
         </section>
@@ -216,412 +216,428 @@
               </div>
               <div class="services-tabs__content">
                 <div class="services-tabs__item js-tabs-item is-active" data-tab="students">
-                  <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                      <a href="#" class="card">
-                        <span class="card__img js-lazy" data-background-image="./img/cards/30.jpg"></span>
-                        <span class="card__content">
-                          <span class="card__title">
-                            <span class="title title--h3">Твердый переплет дипломные работы</span>
+                  <!-- begin services -->
+                  <div class="services">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card">
+                          <span class="card__img js-lazy" data-background-image="./img/cards/30.jpg"></span>
+                          <span class="card__content">
+                            <span class="card__title">
+                              <span class="title title--h3">Твердый переплет дипломные работы</span>
+                            </span>
+                            <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                            <span class="card__btn">
+                              <span class="btn btn--no-hover btn--full">Заказать Online</span>
+                            </span>
                           </span>
-                          <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
-                          <span class="card__btn">
-                            <span class="btn btn--no-hover">Заказать Online</span>
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card">
+                          <span class="card__img js-lazy" data-background-image="./img/cards/27.jpg"></span>
+                          <span class="card__content">
+                            <span class="card__title">
+                              <span class="title title--h3">Твердый переплет диссертации</span>
+                            </span>
+                            <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                            <span class="card__btn">
+                              <span class="btn btn--no-hover btn--full">Заказать Online</span>
+                            </span>
                           </span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                      <a href="#" class="card">
-                        <span class="card__img js-lazy" data-background-image="./img/cards/27.jpg"></span>
-                        <span class="card__content">
-                          <span class="card__title">
-                            <span class="title title--h3">Твердый переплет диссертации</span>
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card">
+                          <span class="card__img js-lazy" data-background-image="./img/cards/28.jpg"></span>
+                          <span class="card__content">
+                            <span class="card__title">
+                              <span class="title title--h3">Авторефераты диссертаций</span>
+                            </span>
+                            <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                            <span class="card__btn">
+                              <span class="btn btn--no-hover btn--full">Заказать Online</span>
+                            </span>
                           </span>
-                          <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
-                          <span class="card__btn">
-                            <span class="btn btn--no-hover">Заказать Online</span>
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card">
+                          <span class="card__img js-lazy" data-background-image="./img/cards/29.jpg"></span>
+                          <span class="card__content">
+                            <span class="card__title">
+                              <span class="title title--h3">Раздаточный материал</span>
+                            </span>
+                            <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                            <span class="card__btn">
+                              <span class="btn btn--no-hover btn--full">Заказать Online</span>
+                            </span>
                           </span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                      <a href="#" class="card">
-                        <span class="card__img js-lazy" data-background-image="./img/cards/28.jpg"></span>
-                        <span class="card__content">
-                          <span class="card__title">
-                            <span class="title title--h3">Авторефераты диссертаций</span>
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card">
+                          <span class="card__img js-lazy" data-background-image="./img/cards/31.jpg"></span>
+                          <span class="card__content">
+                            <span class="card__title">
+                              <span class="title title--h3">Цветная и ч/б распечатка А4</span>
+                            </span>
+                            <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                            <span class="card__btn">
+                              <span class="btn btn--no-hover btn--full">Заказать Online</span>
+                            </span>
                           </span>
-                          <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
-                          <span class="card__btn">
-                            <span class="btn btn--no-hover">Заказать Online</span>
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card">
+                          <span class="card__img js-lazy" data-background-image="./img/cards/32.jpg"></span>
+                          <span class="card__content">
+                            <span class="card__title">
+                              <span class="title title--h3">Цветная и ч/б распечатка А3</span>
+                            </span>
+                            <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                            <span class="card__btn">
+                              <span class="btn btn--no-hover btn--full">Заказать Online</span>
+                            </span>
                           </span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                      <a href="#" class="card">
-                        <span class="card__img js-lazy" data-background-image="./img/cards/29.jpg"></span>
-                        <span class="card__content">
-                          <span class="card__title">
-                            <span class="title title--h3">Раздаточный материал</span>
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card">
+                          <span class="card__img js-lazy" data-background-image="./img/cards/34.jpg"></span>
+                          <span class="card__content">
+                            <span class="card__title">
+                              <span class="title title--h3">Презентации</span>
+                            </span>
+                            <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                            <span class="card__btn">
+                              <span class="btn btn--no-hover btn--full">Заказать Online</span>
+                            </span>
                           </span>
-                          <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
-                          <span class="card__btn">
-                            <span class="btn btn--no-hover">Заказать Online</span>
-                          </span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                      <a href="#" class="card">
-                        <span class="card__img js-lazy" data-background-image="./img/cards/31.jpg"></span>
-                        <span class="card__content">
-                          <span class="card__title">
-                            <span class="title title--h3">Цветная и ч/б распечатка А4</span>
-                          </span>
-                          <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
-                          <span class="card__btn">
-                            <span class="btn btn--no-hover">Заказать Online</span>
-                          </span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                      <a href="#" class="card">
-                        <span class="card__img js-lazy" data-background-image="./img/cards/32.jpg"></span>
-                        <span class="card__content">
-                          <span class="card__title">
-                            <span class="title title--h3">Цветная и ч/б распечатка А3</span>
-                          </span>
-                          <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
-                          <span class="card__btn">
-                            <span class="btn btn--no-hover">Заказать Online</span>
-                          </span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                      <a href="#" class="card">
-                        <span class="card__img js-lazy" data-background-image="./img/cards/34.jpg"></span>
-                        <span class="card__content">
-                          <span class="card__title">
-                            <span class="title title--h3">Презентации</span>
-                          </span>
-                          <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
-                          <span class="card__btn">
-                            <span class="btn btn--no-hover">Заказать Online</span>
-                          </span>
-                        </span>
-                      </a>
+                        </a>
+                      </div>
                     </div>
                   </div>
+                  <!-- end services -->
                 </div>
                 <div class="services-tabs__item js-tabs-item" data-tab="print">
-                  <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                      <a href="#" class="card">
-                        <span class="card__img js-lazy" data-background-image="./img/cards/30.jpg"></span>
-                        <span class="card__content">
-                          <span class="card__title">
-                            <span class="title title--h3">Твердый переплет дипломные работы</span>
+                  <!-- begin services -->
+                  <div class="services">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card">
+                          <span class="card__img js-lazy" data-background-image="./img/cards/30.jpg"></span>
+                          <span class="card__content">
+                            <span class="card__title">
+                              <span class="title title--h3">Твердый переплет дипломные работы</span>
+                            </span>
+                            <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                            <span class="card__btn">
+                              <span class="btn btn--no-hover btn--full">Заказать Online</span>
+                            </span>
                           </span>
-                          <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
-                          <span class="card__btn">
-                            <span class="btn btn--no-hover">Заказать Online</span>
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card">
+                          <span class="card__img js-lazy" data-background-image="./img/cards/27.jpg"></span>
+                          <span class="card__content">
+                            <span class="card__title">
+                              <span class="title title--h3">Твердый переплет диссертации</span>
+                            </span>
+                            <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                            <span class="card__btn">
+                              <span class="btn btn--no-hover btn--full">Заказать Online</span>
+                            </span>
                           </span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                      <a href="#" class="card">
-                        <span class="card__img js-lazy" data-background-image="./img/cards/27.jpg"></span>
-                        <span class="card__content">
-                          <span class="card__title">
-                            <span class="title title--h3">Твердый переплет диссертации</span>
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card">
+                          <span class="card__img js-lazy" data-background-image="./img/cards/28.jpg"></span>
+                          <span class="card__content">
+                            <span class="card__title">
+                              <span class="title title--h3">Авторефераты диссертаций</span>
+                            </span>
+                            <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                            <span class="card__btn">
+                              <span class="btn btn--no-hover btn--full">Заказать Online</span>
+                            </span>
                           </span>
-                          <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
-                          <span class="card__btn">
-                            <span class="btn btn--no-hover">Заказать Online</span>
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card">
+                          <span class="card__img js-lazy" data-background-image="./img/cards/29.jpg"></span>
+                          <span class="card__content">
+                            <span class="card__title">
+                              <span class="title title--h3">Раздаточный материал</span>
+                            </span>
+                            <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                            <span class="card__btn">
+                              <span class="btn btn--no-hover btn--full">Заказать Online</span>
+                            </span>
                           </span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                      <a href="#" class="card">
-                        <span class="card__img js-lazy" data-background-image="./img/cards/28.jpg"></span>
-                        <span class="card__content">
-                          <span class="card__title">
-                            <span class="title title--h3">Авторефераты диссертаций</span>
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card">
+                          <span class="card__img js-lazy" data-background-image="./img/cards/31.jpg"></span>
+                          <span class="card__content">
+                            <span class="card__title">
+                              <span class="title title--h3">Цветная и ч/б распечатка А4</span>
+                            </span>
+                            <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                            <span class="card__btn">
+                              <span class="btn btn--no-hover btn--full">Заказать Online</span>
+                            </span>
                           </span>
-                          <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
-                          <span class="card__btn">
-                            <span class="btn btn--no-hover">Заказать Online</span>
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card">
+                          <span class="card__img js-lazy" data-background-image="./img/cards/32.jpg"></span>
+                          <span class="card__content">
+                            <span class="card__title">
+                              <span class="title title--h3">Цветная и ч/б распечатка А3</span>
+                            </span>
+                            <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                            <span class="card__btn">
+                              <span class="btn btn--no-hover btn--full">Заказать Online</span>
+                            </span>
                           </span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                      <a href="#" class="card">
-                        <span class="card__img js-lazy" data-background-image="./img/cards/29.jpg"></span>
-                        <span class="card__content">
-                          <span class="card__title">
-                            <span class="title title--h3">Раздаточный материал</span>
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card">
+                          <span class="card__img js-lazy" data-background-image="./img/cards/34.jpg"></span>
+                          <span class="card__content">
+                            <span class="card__title">
+                              <span class="title title--h3">Презентации</span>
+                            </span>
+                            <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                            <span class="card__btn">
+                              <span class="btn btn--no-hover btn--full">Заказать Online</span>
+                            </span>
                           </span>
-                          <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
-                          <span class="card__btn">
-                            <span class="btn btn--no-hover">Заказать Online</span>
-                          </span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                      <a href="#" class="card">
-                        <span class="card__img js-lazy" data-background-image="./img/cards/31.jpg"></span>
-                        <span class="card__content">
-                          <span class="card__title">
-                            <span class="title title--h3">Цветная и ч/б распечатка А4</span>
-                          </span>
-                          <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
-                          <span class="card__btn">
-                            <span class="btn btn--no-hover">Заказать Online</span>
-                          </span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                      <a href="#" class="card">
-                        <span class="card__img js-lazy" data-background-image="./img/cards/32.jpg"></span>
-                        <span class="card__content">
-                          <span class="card__title">
-                            <span class="title title--h3">Цветная и ч/б распечатка А3</span>
-                          </span>
-                          <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
-                          <span class="card__btn">
-                            <span class="btn btn--no-hover">Заказать Online</span>
-                          </span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                      <a href="#" class="card">
-                        <span class="card__img js-lazy" data-background-image="./img/cards/34.jpg"></span>
-                        <span class="card__content">
-                          <span class="card__title">
-                            <span class="title title--h3">Презентации</span>
-                          </span>
-                          <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
-                          <span class="card__btn">
-                            <span class="btn btn--no-hover">Заказать Online</span>
-                          </span>
-                        </span>
-                      </a>
+                        </a>
+                      </div>
                     </div>
                   </div>
+                  <!-- end services -->
                 </div>
                 <div class="services-tabs__item js-tabs-item" data-tab="copy">
-                  <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                      <a href="#" class="card">
-                        <span class="card__img js-lazy" data-background-image="./img/cards/30.jpg"></span>
-                        <span class="card__content">
-                          <span class="card__title">
-                            <span class="title title--h3">Твердый переплет дипломные работы</span>
+                  <!-- begin services -->
+                  <div class="services">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card">
+                          <span class="card__img js-lazy" data-background-image="./img/cards/30.jpg"></span>
+                          <span class="card__content">
+                            <span class="card__title">
+                              <span class="title title--h3">Твердый переплет дипломные работы</span>
+                            </span>
+                            <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                            <span class="card__btn">
+                              <span class="btn btn--no-hover btn--full">Заказать Online</span>
+                            </span>
                           </span>
-                          <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
-                          <span class="card__btn">
-                            <span class="btn btn--no-hover">Заказать Online</span>
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card">
+                          <span class="card__img js-lazy" data-background-image="./img/cards/27.jpg"></span>
+                          <span class="card__content">
+                            <span class="card__title">
+                              <span class="title title--h3">Твердый переплет диссертации</span>
+                            </span>
+                            <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                            <span class="card__btn">
+                              <span class="btn btn--no-hover btn--full">Заказать Online</span>
+                            </span>
                           </span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                      <a href="#" class="card">
-                        <span class="card__img js-lazy" data-background-image="./img/cards/27.jpg"></span>
-                        <span class="card__content">
-                          <span class="card__title">
-                            <span class="title title--h3">Твердый переплет диссертации</span>
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card">
+                          <span class="card__img js-lazy" data-background-image="./img/cards/28.jpg"></span>
+                          <span class="card__content">
+                            <span class="card__title">
+                              <span class="title title--h3">Авторефераты диссертаций</span>
+                            </span>
+                            <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                            <span class="card__btn">
+                              <span class="btn btn--no-hover btn--full">Заказать Online</span>
+                            </span>
                           </span>
-                          <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
-                          <span class="card__btn">
-                            <span class="btn btn--no-hover">Заказать Online</span>
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card">
+                          <span class="card__img js-lazy" data-background-image="./img/cards/29.jpg"></span>
+                          <span class="card__content">
+                            <span class="card__title">
+                              <span class="title title--h3">Раздаточный материал</span>
+                            </span>
+                            <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                            <span class="card__btn">
+                              <span class="btn btn--no-hover btn--full">Заказать Online</span>
+                            </span>
                           </span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                      <a href="#" class="card">
-                        <span class="card__img js-lazy" data-background-image="./img/cards/28.jpg"></span>
-                        <span class="card__content">
-                          <span class="card__title">
-                            <span class="title title--h3">Авторефераты диссертаций</span>
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card">
+                          <span class="card__img js-lazy" data-background-image="./img/cards/31.jpg"></span>
+                          <span class="card__content">
+                            <span class="card__title">
+                              <span class="title title--h3">Цветная и ч/б распечатка А4</span>
+                            </span>
+                            <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                            <span class="card__btn">
+                              <span class="btn btn--no-hover btn--full">Заказать Online</span>
+                            </span>
                           </span>
-                          <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
-                          <span class="card__btn">
-                            <span class="btn btn--no-hover">Заказать Online</span>
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card">
+                          <span class="card__img js-lazy" data-background-image="./img/cards/32.jpg"></span>
+                          <span class="card__content">
+                            <span class="card__title">
+                              <span class="title title--h3">Цветная и ч/б распечатка А3</span>
+                            </span>
+                            <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                            <span class="card__btn">
+                              <span class="btn btn--no-hover btn--full">Заказать Online</span>
+                            </span>
                           </span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                      <a href="#" class="card">
-                        <span class="card__img js-lazy" data-background-image="./img/cards/29.jpg"></span>
-                        <span class="card__content">
-                          <span class="card__title">
-                            <span class="title title--h3">Раздаточный материал</span>
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card">
+                          <span class="card__img js-lazy" data-background-image="./img/cards/34.jpg"></span>
+                          <span class="card__content">
+                            <span class="card__title">
+                              <span class="title title--h3">Презентации</span>
+                            </span>
+                            <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                            <span class="card__btn">
+                              <span class="btn btn--no-hover btn--full">Заказать Online</span>
+                            </span>
                           </span>
-                          <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
-                          <span class="card__btn">
-                            <span class="btn btn--no-hover">Заказать Online</span>
-                          </span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                      <a href="#" class="card">
-                        <span class="card__img js-lazy" data-background-image="./img/cards/31.jpg"></span>
-                        <span class="card__content">
-                          <span class="card__title">
-                            <span class="title title--h3">Цветная и ч/б распечатка А4</span>
-                          </span>
-                          <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
-                          <span class="card__btn">
-                            <span class="btn btn--no-hover">Заказать Online</span>
-                          </span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                      <a href="#" class="card">
-                        <span class="card__img js-lazy" data-background-image="./img/cards/32.jpg"></span>
-                        <span class="card__content">
-                          <span class="card__title">
-                            <span class="title title--h3">Цветная и ч/б распечатка А3</span>
-                          </span>
-                          <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
-                          <span class="card__btn">
-                            <span class="btn btn--no-hover">Заказать Online</span>
-                          </span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                      <a href="#" class="card">
-                        <span class="card__img js-lazy" data-background-image="./img/cards/34.jpg"></span>
-                        <span class="card__content">
-                          <span class="card__title">
-                            <span class="title title--h3">Презентации</span>
-                          </span>
-                          <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
-                          <span class="card__btn">
-                            <span class="btn btn--no-hover">Заказать Online</span>
-                          </span>
-                        </span>
-                      </a>
+                        </a>
+                      </div>
                     </div>
                   </div>
+                  <!-- end services -->
                 </div>
                 <div class="services-tabs__item js-tabs-item" data-tab="services">
-                  <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                      <a href="#" class="card">
-                        <span class="card__img js-lazy" data-background-image="./img/cards/30.jpg"></span>
-                        <span class="card__content">
-                          <span class="card__title">
-                            <span class="title title--h3">Твердый переплет дипломные работы</span>
+                  <!-- begin services -->
+                  <div class="services">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card">
+                          <span class="card__img js-lazy" data-background-image="./img/cards/30.jpg"></span>
+                          <span class="card__content">
+                            <span class="card__title">
+                              <span class="title title--h3">Твердый переплет дипломные работы</span>
+                            </span>
+                            <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                            <span class="card__btn">
+                              <span class="btn btn--no-hover btn--full">Заказать Online</span>
+                            </span>
                           </span>
-                          <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
-                          <span class="card__btn">
-                            <span class="btn btn--no-hover">Заказать Online</span>
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card">
+                          <span class="card__img js-lazy" data-background-image="./img/cards/27.jpg"></span>
+                          <span class="card__content">
+                            <span class="card__title">
+                              <span class="title title--h3">Твердый переплет диссертации</span>
+                            </span>
+                            <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                            <span class="card__btn">
+                              <span class="btn btn--no-hover btn--full">Заказать Online</span>
+                            </span>
                           </span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                      <a href="#" class="card">
-                        <span class="card__img js-lazy" data-background-image="./img/cards/27.jpg"></span>
-                        <span class="card__content">
-                          <span class="card__title">
-                            <span class="title title--h3">Твердый переплет диссертации</span>
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card">
+                          <span class="card__img js-lazy" data-background-image="./img/cards/28.jpg"></span>
+                          <span class="card__content">
+                            <span class="card__title">
+                              <span class="title title--h3">Авторефераты диссертаций</span>
+                            </span>
+                            <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                            <span class="card__btn">
+                              <span class="btn btn--no-hover btn--full">Заказать Online</span>
+                            </span>
                           </span>
-                          <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
-                          <span class="card__btn">
-                            <span class="btn btn--no-hover">Заказать Online</span>
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card">
+                          <span class="card__img js-lazy" data-background-image="./img/cards/29.jpg"></span>
+                          <span class="card__content">
+                            <span class="card__title">
+                              <span class="title title--h3">Раздаточный материал</span>
+                            </span>
+                            <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                            <span class="card__btn">
+                              <span class="btn btn--no-hover btn--full">Заказать Online</span>
+                            </span>
                           </span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                      <a href="#" class="card">
-                        <span class="card__img js-lazy" data-background-image="./img/cards/28.jpg"></span>
-                        <span class="card__content">
-                          <span class="card__title">
-                            <span class="title title--h3">Авторефераты диссертаций</span>
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card">
+                          <span class="card__img js-lazy" data-background-image="./img/cards/31.jpg"></span>
+                          <span class="card__content">
+                            <span class="card__title">
+                              <span class="title title--h3">Цветная и ч/б распечатка А4</span>
+                            </span>
+                            <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                            <span class="card__btn">
+                              <span class="btn btn--no-hover btn--full">Заказать Online</span>
+                            </span>
                           </span>
-                          <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
-                          <span class="card__btn">
-                            <span class="btn btn--no-hover">Заказать Online</span>
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card">
+                          <span class="card__img js-lazy" data-background-image="./img/cards/32.jpg"></span>
+                          <span class="card__content">
+                            <span class="card__title">
+                              <span class="title title--h3">Цветная и ч/б распечатка А3</span>
+                            </span>
+                            <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                            <span class="card__btn">
+                              <span class="btn btn--no-hover btn--full">Заказать Online</span>
+                            </span>
                           </span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                      <a href="#" class="card">
-                        <span class="card__img js-lazy" data-background-image="./img/cards/29.jpg"></span>
-                        <span class="card__content">
-                          <span class="card__title">
-                            <span class="title title--h3">Раздаточный материал</span>
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-6">
+                        <a href="#" class="card">
+                          <span class="card__img js-lazy" data-background-image="./img/cards/34.jpg"></span>
+                          <span class="card__content">
+                            <span class="card__title">
+                              <span class="title title--h3">Презентации</span>
+                            </span>
+                            <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
+                            <span class="card__btn">
+                              <span class="btn btn--no-hover btn--full">Заказать Online</span>
+                            </span>
                           </span>
-                          <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
-                          <span class="card__btn">
-                            <span class="btn btn--no-hover">Заказать Online</span>
-                          </span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                      <a href="#" class="card">
-                        <span class="card__img js-lazy" data-background-image="./img/cards/31.jpg"></span>
-                        <span class="card__content">
-                          <span class="card__title">
-                            <span class="title title--h3">Цветная и ч/б распечатка А4</span>
-                          </span>
-                          <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
-                          <span class="card__btn">
-                            <span class="btn btn--no-hover">Заказать Online</span>
-                          </span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                      <a href="#" class="card">
-                        <span class="card__img js-lazy" data-background-image="./img/cards/32.jpg"></span>
-                        <span class="card__content">
-                          <span class="card__title">
-                            <span class="title title--h3">Цветная и ч/б распечатка А3</span>
-                          </span>
-                          <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
-                          <span class="card__btn">
-                            <span class="btn btn--no-hover">Заказать Online</span>
-                          </span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                      <a href="#" class="card">
-                        <span class="card__img js-lazy" data-background-image="./img/cards/34.jpg"></span>
-                        <span class="card__content">
-                          <span class="card__title">
-                            <span class="title title--h3">Презентации</span>
-                          </span>
-                          <span class="card__text text--sm"> Печать презентаций в цвете + сшивка на пружину </span>
-                          <span class="card__btn">
-                            <span class="btn btn--no-hover">Заказать Online</span>
-                          </span>
-                        </span>
-                      </a>
+                        </a>
+                      </div>
                     </div>
                   </div>
+                  <!-- end services -->
                 </div>
               </div>
             </div>
