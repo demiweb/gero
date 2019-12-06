@@ -22,7 +22,7 @@ export default () => {
       }
     })
   }
-  const observer = new IntersectionObserver(handleObserving)
+  const observer = new IntersectionObserver(handleObserving, { threshold: 0.5 })
 
   sections.forEach(section => {
     observer.observe(section)
