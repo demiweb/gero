@@ -7,10 +7,7 @@ class CustomSelect extends Select {
   }
 
   init() {
-    if (
-      this.select.classList &&
-      this.select.classList.contains('custom-select')
-    ) {
+    if (this.select.classList && this.select.classList.contains('custom-select')) {
       return
     }
     super.init()
