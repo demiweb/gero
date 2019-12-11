@@ -21,23 +21,7 @@
           <h1 class="title">Твердый переплет Дипломная работа</h1>
         </div>
 
-        <div class="section__nav js-sticky-polyfill">
-          <!-- begin block -->
-          <div class="block block--sm">
-            {{ mixins.list(
-              name = 'block-nav',
-              modifications = { wrap: '', list: 'block-nav__list', item: 'block-nav__item', link: 'block-nav__link js-scroll-to' },
-              list = [
-                { link: 'Об услуге', modLink: 'is-active', href: '#about' },
-                { link: 'Таблица с ценами', href: '#prices' },
-                { link: 'Какие материалы используем', href: '#matherials' },
-                { link: 'Выполненые работы', href: '#works' },
-                { link: 'Дополнительные услуги', href: '#services' }
-              ]
-            ) }}
-          </div>
-          <!-- end block -->
-        </div>
+        {% include "partials/_section-nav.html" %}
 
         <!-- begin article -->
         <div class="article mb-md">

@@ -26,6 +26,11 @@ contacts = [
     icon: 'call-answer',
     title: 'Телефон:',
     text: '<a href="tel:+380964864565">+38 (096) 486-45-65</a>'
+  },
+  {
+    icon: 'envelope',
+    title: 'Email:',
+    text: '<a href="mailto:testemail.ua@gmail.com">testemail.ua@gmail.com</a>'
   }
 ]
 %}
@@ -50,7 +55,7 @@ contacts = [
                   <h3 class="title title--h3 title--arci">{{ i.title | safe }}</h3>
                 </div>
 
-                <div class="contact-full__text text--sm">{{ i.text | safe }}</div>
+                <div class="contact-full__text">{{ i.text | safe }}</div>
               </div>
               <!-- end contact-full -->
             </div>

@@ -13,6 +13,15 @@ services: [
   { mod: 'card--shadow-mod', imgInline: 'pop_braiz_a4.png', title: 'Цветная и ч/б распечатка А3' },
   { mod: 'card--shadow-mod', imgInline: 'presentation.png', title: 'Презентации' }
 ]
+sectionNav: {
+  list: [
+    { link: 'Об услуге', modLink: 'is-active', href: '#about' },
+    { link: 'Таблица с ценами', href: '#prices' },
+    { link: 'Какие материалы используем', href: '#matherials' },
+    { link: 'Выполненые работы', href: '#works' },
+    { link: 'Дополнительные услуги', href: '#services' }
+  ]
+}
 ---
 {% extends "layouts/_layout.html" %}
 

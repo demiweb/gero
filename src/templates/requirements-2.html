@@ -1,0 +1,29 @@
+---
+title: requirements-2
+page: requirements-2
+hero: {
+  bg: 'bg-hero-requirements.jpg',
+  breadcrumbs: {
+    list: [
+      { link: 'Главная' },
+      { item: '-' },
+      { link: 'Контакты', modLink: 'is-active' },
+    ]
+  },
+  title: 'Контакты'
+}
+sectionNav: {
+  list: [
+    { link: 'Об услуге', modLink: 'is-active', href: '#about' },
+    { link: 'Таблица с ценами', href: '#prices' },
+    { link: 'Какие материалы используем', href: '#matherials' },
+    { link: 'Выполненые работы', href: '#works' }
+  ]
+}
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+  {% include "partials/_hero.html" %}
+  {% include "partials/sections/_s-service.html" %}
+{% endblock %}
