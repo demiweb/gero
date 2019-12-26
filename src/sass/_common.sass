@@ -33,13 +33,15 @@ body
 .logo
   font-size: 0
   display: inline-block
-  max-width: 130px
+  max-width: 185px
+  +lg
+    max-width: 150px
   // img
     // max-height: 70px
-  +xs
-    width: 80px
   +xss
-    width: 60px
+    width: 80px
+  // +xss
+  //   width: 60px
 
 .close
   +icon-close(20, 2, currentColor)
