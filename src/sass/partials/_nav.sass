@@ -48,6 +48,10 @@
         display: inline
         +hover
           text-decoration: none
+    &:nth-child(4) ~ li
+      > ul
+        left: auto
+        right: 0
 
   a
     +flex(flex-start, center)
